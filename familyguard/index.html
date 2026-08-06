@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FamilyGuard — Family Safety & Remote Monitoring App</title>
   <meta name="description" content="Monitor your elderly parents remotely. Real-time location, SMS alerts, SOS, fall detection and more. Free Android app."/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
   <style>
     /* ── HERO ── */
@@ -16,7 +17,7 @@
     }
 
     .app-hero h1 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(36px, 6vw, 58px);
       color: #fff;
       line-height: 1.15;
@@ -87,7 +88,7 @@
     }
 
     .features-section h2 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(28px, 4vw, 38px);
       color: var(--text);
       margin-bottom: 8px;
@@ -141,7 +142,7 @@
     }
 
     .how-section h2 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(28px, 4vw, 38px);
       color: var(--text);
       margin-bottom: 56px;
@@ -185,7 +186,7 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto 16px;
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       box-shadow: 0 4px 16px rgba(0,188,212,0.3);
       position: relative;
       z-index: 1;
@@ -209,7 +210,7 @@
     }
 
     .modes-section h2 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(28px, 4vw, 38px);
       color: var(--text);
       margin-bottom: 40px;
@@ -240,7 +241,7 @@
     }
 
     .mode-card h3 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       font-size: 24px;
       margin-bottom: 6px;
     }
@@ -287,7 +288,7 @@
     }
 
     .cta-band h2 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(28px, 4vw, 40px);
       color: var(--text);
       margin-bottom: 12px;
@@ -309,13 +310,15 @@
 
   <!-- NAV -->
   <nav>
-    <a href="/" class="nav-brand">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <rect width="28" height="28" rx="8" fill="#00BCD4"/>
-        <path d="M14 4L6 7.5V14.5C6 19.2 9.6 23.6 14 25C18.4 23.6 22 19.2 22 14.5V7.5L14 4Z" fill="white" fill-opacity="0.9"/>
-        <path d="M10.5 14.5L13 17L17.5 12" stroke="#00BCD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
+      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tnk-familyguard-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
+        </linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tnk-familyguard-1)"/>
+        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
       </svg>
-      technook.in
+      Technook
     </a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
@@ -331,7 +334,7 @@
       <div class="hero-app-icon">
         <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
           <path d="M28 6L10 13.5V27C10 38.6 18 49.4 28 52C38 49.4 46 38.6 46 27V13.5L28 6Z" fill="white" fill-opacity="0.9"/>
-          <path d="M20 27L25.5 32.5L36 22" stroke="#00BCD4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 27L25.5 32.5L36 22" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
       <h1>FamilyGuard</h1>
@@ -508,25 +511,28 @@
   <footer>
     <div class="footer-inner">
       <div>
-        <div class="footer-brand">
-          <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
-            <rect width="28" height="28" rx="8" fill="#00BCD4"/>
-            <path d="M14 4L6 7.5V14.5C6 19.2 9.6 23.6 14 25C18.4 23.6 22 19.2 22 14.5V7.5L14 4Z" fill="white" fill-opacity="0.9"/>
-          </svg>
-          FamilyGuard
+        <div class="footer-brand wordmark">
+          <svg width="24" height="24" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tnk-familyguard-2" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
+        </linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tnk-familyguard-2)"/>
+        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+          Technook
         </div>
         <p class="footer-tagline">Family Safety &amp; Remote Monitoring</p>
-        <p style="font-size:13px;">Built by <a href="/" style="color:#5a6a7a;">Anup Kumar</a> · technook.in</p>
+        <p style="font-size:13px;">Built by <a href="/" style="color:#5a6a7a;">Technook</a> · technook.in</p>
       </div>
       <div class="footer-links">
         <a href="/familyguard/privacy/">Privacy Policy</a>
         <a href="/familyguard/support/">Support &amp; FAQ</a>
-        <a href="mailto:anup.root@gmail.com">Contact</a>
+        <a href="mailto:echoanup@gmail.com">Contact</a>
         <a href="/">technook.in</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Anup Kumar · FamilyGuard</span>
+      <span>© 2026 Technook · FamilyGuard</span>
       <span>Free · No ads · No subscriptions</span>
     </div>
   </footer>

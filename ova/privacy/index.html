@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy &mdash; Ova</title>
+  <meta name="description" content="How Ova stores your cycle data, who can read it, and what is never shared. Written to be read."/>
+  <meta name="theme-color" content="#0D0C0C"/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="canonical" href="https://technook.in/ova/privacy/"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <style>
+    :root {
+      --teal: #C2536B; --teal-dark: #A33F55; --teal-dim: #8A3446;
+      --teal-light: #FCEBEF; --teal-xlight: #FEF6F8;
+    }
+    .hero-gradient { background: linear-gradient(135deg, #201D1C 0%, #14120F 55%, #0D0C0C 100%); }
+    .pp-hero { padding: 64px 24px 56px; text-align: center; }
+    .pp-hero h1 { font-family: 'Inter', sans-serif; font-size: clamp(30px, 5vw, 44px); color: #fff; margin: 16px 0 8px; }
+    .pp-hero p { color: rgba(255,255,255,0.85); font-size: 16px; }
+
+    .pp-body { padding: 48px 24px 80px; }
+    .pp-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 20px; }
+    .pp-section h2 { font-family: 'Inter', sans-serif; font-size: 21px; color: var(--text); margin-bottom: 16px; }
+    .pp-section p { font-size: 15px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.75; }
+    .pp-section strong { color: var(--text); }
+    .pp-section ul { padding-left: 20px; margin: 0 0 12px; }
+    .pp-section ul li { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-bottom: 8px; }
+
+    ol.steps-list { padding-left: 0; list-style: none; counter-reset: step; }
+    ol.steps-list li {
+      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--border);
+      font-size: 15px; color: var(--text-muted);
+    }
+    ol.steps-list li:last-child { border-bottom: none; }
+    ol.steps-list li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 12px;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: #fff;
+      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;
+    }
+    ol.steps-list li strong { color: var(--text); }
+
+    ul.check { list-style: none; padding: 0; }
+    ul.check li { padding: 7px 0 7px 26px; position: relative; font-size: 15px; color: var(--text-muted); }
+    ul.check li::before { content: '\2713'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+
+    .note-box { background: var(--teal-xlight); border-left: 4px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; font-size: 15px; color: var(--teal-dim); margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
+      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tnk-ova-privacy-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
+        </linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tnk-ova-privacy-1)"/>
+        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+      Technook
+    </a>
+    <ul class="nav-links">
+      <li><a href="/ova/">Ova</a></li>
+      <li><a href="/ova/support/">Support</a></li>
+      <li><a href="/ova/privacy/">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-gradient">
+    <section class="pp-hero">
+      <span class="badge">Ova</span>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: August 2026 &nbsp;&middot;&nbsp; Effective immediately</p>
+    </section>
+  </div>
+
+  <div class="pp-body">
+    <div class="container-sm">
+
+      <div class="pp-section">
+        <h2>The short version</h2>
+        <p>Ova stores what you log so you can see it on your own devices. Nobody else can read any of it unless you personally invite them, and you choose category by category what each person sees. There is no advertising, no analytics, and nothing is sold or shared with anyone else. You can delete everything from inside the app.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>1. Who this is</h2>
+        <p>Ova is an independent app built by Technook. The developer is the data controller. Contact: <strong>devtools@theforgelabs.io</strong>.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>2. What Ova stores</h2>
+        <ul>
+          <li><strong>Your account.</strong> Ova uses Google sign-in. From your Google account it stores your user ID, display name and profile photo URL. It never sees or stores your Google password.</li>
+          <li><strong>What you log.</strong> Period start and end dates, flow, symptoms and their severity, mood, intimacy and whether protection was used, and &mdash; in postpartum mode &mdash; daily feed, sleep and nappy counts.</li>
+          <li><strong>Basal body temperature, if you connect it.</strong> Ova can read basal body temperature from Health Connect. This is off unless you turn it on, and Ova reads nothing else from Health Connect and never writes anything back to it.</li>
+          <li><strong>Your settings.</strong> Reminder preferences, tracking mode, and the due date or birth date if you set one.</li>
+          <li><strong>Sharing records.</strong> Who you share with, which categories each person may see, how much history, and the time each person last opened your data.</li>
+        </ul>
+        <p>Ova does not ask for your name, email address, phone number, address, contacts, location, photos or any device identifier for advertising.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>3. Sensitive health data</h2>
+        <p>Menstrual, reproductive and infant data is sensitive. It is stored under your account and readable only by you and by people you have specifically invited. It is never used for advertising or profiling, and it is never sold, rented or shared for anyone else's purposes.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>4. Health Connect</h2>
+        <p>If you connect it, Ova reads <strong>basal body temperature</strong> from Health Connect and stores it with your other logs. Nothing else is read, nothing is ever written back, and the connection does nothing until you grant it.</p>
+        <p>Temperature is <strong>never shareable</strong>. It is not offered as a category when you invite someone, and the server refuses to serve it to a viewer regardless of what the app asks for. A temperature curve says whether you ovulated in a given cycle &mdash; that is a conclusion about your body rather than a date, and Ova shares dates.</p>
+        <p>You can withdraw the permission at any time in Health Connect. Readings already imported stay in your logs until you delete your account; deleting your account removes them with everything else.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>5. Sharing, and how it is enforced</h2>
+        <p>Sharing is always something you start. You create an invite link, choose which of the four categories it grants &mdash; cycle dates, symptoms, intimacy, mood &mdash; and how much history, and send it to one person. The first person to open it can accept.</p>
+        <div class="note-box">Access is enforced on the server, not in the app. Each category is stored in its own collection and the server refuses to send a category you did not grant, so a modified copy of the app cannot ask for more than you allowed.</div>
+        <ul style="margin-top:16px;">
+          <li>Predictions and fertile-window estimates are <strong>never</strong> shared with anyone. Viewers see only what you logged.</li>
+          <li>You can change what a person sees, pause them, or remove them at any time. Removal takes effect immediately.</li>
+          <li>You can see when each person last opened your data.</li>
+          <li>Someone else's data shown to you is fetched live and is not written to your phone's storage. If you lose your phone, their data is not on it.</li>
+        </ul>
+      </div>
+
+      <div class="pp-section">
+        <h2>6. Who else processes it</h2>
+        <p>Ova uses <strong>Google Firebase</strong> (Authentication and Cloud Firestore) to sign you in and store your data. Google processes it on Ova's behalf under Google's terms. There are no other processors.</p>
+        <p>Ova includes <strong>no advertising SDK, no analytics SDK and no crash-reporting SDK</strong>. Nothing about how you use the app is reported anywhere.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>7. Leaving the app</h2>
+        <p>Two things send data out, and both need you to act:</p>
+        <ul>
+          <li><strong>Export.</strong> Saving a PDF or sharing a summary hands it to whatever app you pick. Where it goes next is outside Ova's control, and the app says so before it happens.</li>
+          <li><strong>An invite link.</strong> Anyone holding the link can accept it until it is used or expires, so send it to one person over a channel you trust.</li>
+        </ul>
+      </div>
+
+      <div class="pp-section">
+        <h2>8. Notifications</h2>
+        <p>Reminders are generated on your phone. There is no push service and no notification content leaves the device. Discreet notifications are on by default so a lock screen shows only that Ova has a reminder, never what it is about.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>9. How long it is kept, and deleting it</h2>
+        <p>Your data is kept until you delete it. Deleting your account in Settings removes every log, every share, every invite and your profile from the server, clears the copy on your phone, and deletes the sign-in account itself. It cannot be undone.</p>
+        <p>Step-by-step instructions are on the <a href="/ova/delete-account/">delete account</a> page.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>10. Your rights</h2>
+        <p>You can access and export your data from Settings, correct it by editing any day, and erase all of it by deleting your account. If you would rather ask, or want to object to or restrict processing, write to <strong>devtools@theforgelabs.io</strong>.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>11. Children</h2>
+        <p>Ova is not intended for children and is not directed at anyone under 18.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>12. Security, stated honestly</h2>
+        <p>Data is encrypted in transit, and access is enforced by server-side rules rather than by the app. Two limits worth stating plainly rather than leaving you to assume otherwise:</p>
+        <ul>
+          <li>Your data is <strong>not end-to-end encrypted</strong>. It is stored in a form the service can read. Ova does not read it, but a policy is not the same as cryptography.</li>
+          <li>Sharing cycle dates also shares anything derivable from them. Ova declines to show a viewer a fertile window, but the dates themselves permit the same arithmetic.</li>
+        </ul>
+      </div>
+
+      <div class="pp-section">
+        <h2>13. Changes</h2>
+        <p>If this policy changes in a way that affects what is stored or who can read it, the app will say so before the change takes effect.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand wordmark">Ova</div>
+        <p class="footer-tagline">Cycle tracking, and who else gets to see it.</p>
+        <p style="font-size:13px;">&copy; 2026 Technook &middot; technook.in</p>
+      </div>
+      <div class="footer-links">
+        <a href="/ova/">App Home</a>
+        <a href="/ova/privacy/">Privacy Policy</a>
+        <a href="/ova/support/">Support</a>
+        <a href="/ova/delete-account/">Delete Account</a>
+        <a href="/">technook.in</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

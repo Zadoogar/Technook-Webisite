@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete Your Account &amp; Data &mdash; Ova</title>
+  <meta name="description" content="How to delete your Ova account and every log, from inside the app or by request."/>
+  <meta name="theme-color" content="#0D0C0C"/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="canonical" href="https://technook.in/ova/delete-account/"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <style>
+    :root {
+      --teal: #C2536B; --teal-dark: #A33F55; --teal-dim: #8A3446;
+      --teal-light: #FCEBEF; --teal-xlight: #FEF6F8;
+    }
+    .hero-gradient { background: linear-gradient(135deg, #201D1C 0%, #14120F 55%, #0D0C0C 100%); }
+    .pp-hero { padding: 64px 24px 56px; text-align: center; }
+    .pp-hero h1 { font-family: 'Inter', sans-serif; font-size: clamp(30px, 5vw, 44px); color: #fff; margin: 16px 0 8px; }
+    .pp-hero p { color: rgba(255,255,255,0.85); font-size: 16px; }
+
+    .pp-body { padding: 48px 24px 80px; }
+    .pp-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 20px; }
+    .pp-section h2 { font-family: 'Inter', sans-serif; font-size: 21px; color: var(--text); margin-bottom: 16px; }
+    .pp-section p { font-size: 15px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.75; }
+    .pp-section strong { color: var(--text); }
+    .pp-section ul { padding-left: 20px; margin: 0 0 12px; }
+    .pp-section ul li { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-bottom: 8px; }
+
+    ol.steps-list { padding-left: 0; list-style: none; counter-reset: step; }
+    ol.steps-list li {
+      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--border);
+      font-size: 15px; color: var(--text-muted);
+    }
+    ol.steps-list li:last-child { border-bottom: none; }
+    ol.steps-list li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 12px;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: #fff;
+      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;
+    }
+    ol.steps-list li strong { color: var(--text); }
+
+    ul.check { list-style: none; padding: 0; }
+    ul.check li { padding: 7px 0 7px 26px; position: relative; font-size: 15px; color: var(--text-muted); }
+    ul.check li::before { content: '\2713'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+
+    .note-box { background: var(--teal-xlight); border-left: 4px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; font-size: 15px; color: var(--teal-dim); margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
+      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tnk-ova-delete-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
+        </linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tnk-ova-delete-1)"/>
+        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+      Technook
+    </a>
+    <ul class="nav-links">
+      <li><a href="/ova/">Ova</a></li>
+      <li><a href="/ova/support/">Support</a></li>
+      <li><a href="/ova/privacy/">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-gradient">
+    <section class="pp-hero">
+      <span class="badge">Ova</span>
+      <h1>Delete Your Account &amp; Data</h1>
+      <p>Everything, including the copy on the server. From inside the app.</p>
+    </section>
+  </div>
+
+  <div class="pp-body">
+    <div class="container-sm">
+
+      <div class="pp-section">
+        <h2>Delete from inside the app</h2>
+        <ol class="steps-list">
+          <li>Open <strong>Ova</strong> and go to the <strong>Settings</strong> tab.</li>
+          <li>Scroll to <strong>Delete account</strong>, at the bottom of the data group.</li>
+          <li>Read the confirmation &mdash; it names the people who lose access.</li>
+          <li>Tap <strong>Delete everything</strong>.</li>
+        </ol>
+        <div class="note-box">This is permanent and cannot be undone. It is not the same as signing out &mdash; signing out leaves everything on the server.</div>
+      </div>
+
+      <div class="pp-section">
+        <h2>What gets deleted</h2>
+        <ul class="check">
+          <li>Every period, flow, symptom, mood and intimacy log</li>
+          <li>Basal temperature readings imported from Health Connect</li>
+          <li>Postpartum feed, sleep and nappy counts</li>
+          <li>The copy on the server, not just the one on your phone</li>
+          <li>Every share &mdash; anyone you shared with loses access the moment you confirm</li>
+          <li>Every share you were following &mdash; you stop seeing their data</li>
+          <li>Pending invites you created</li>
+          <li>Your profile and the sign-in account itself</li>
+        </ul>
+        <p style="margin-top:14px;">Access is revoked <strong>before</strong> anything is deleted. If the deletion is interrupted &mdash; you lose connection halfway &mdash; it never leaves your data readable by someone who was part-way removed.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>What deleting does not touch</h2>
+        <p>Anything you exported yourself. A PDF you saved or a summary you sent to someone is outside Ova once it leaves the app, and deleting your account cannot reach it.</p>
+        <p>Data belonging to people who shared with <em>you</em> stays theirs. Deleting your account removes your access to it, not the data.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>Prefer to request it by email?</h2>
+        <p>If you cannot get into the app, email us from the Google address you signed in with and we will delete the account and its data for you:</p>
+        <p><a href="mailto:devtools@theforgelabs.io?subject=Delete%20my%20Ova%20account" class="btn btn-primary" style="margin-top:4px;">Request deletion by email</a></p>
+        <p style="margin-top:14px;">Please include the email address used for your account. We will process the request and confirm within <strong>30 days</strong>.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand wordmark">Ova</div>
+        <p class="footer-tagline">Cycle tracking, and who else gets to see it.</p>
+        <p style="font-size:13px;">&copy; 2026 Technook &middot; technook.in</p>
+      </div>
+      <div class="footer-links">
+        <a href="/ova/">App Home</a>
+        <a href="/ova/privacy/">Privacy Policy</a>
+        <a href="/ova/support/">Support</a>
+        <a href="/ova/delete-account/">Delete Account</a>
+        <a href="/">technook.in</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

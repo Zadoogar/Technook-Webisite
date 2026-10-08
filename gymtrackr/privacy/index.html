@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy &mdash; GymTrackr</title>
+  <meta name="description" content="GymTrackr has no internet permission. Your training and health data never leaves your phone. Here is exactly what it stores and why."/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="canonical" href="https://technook.in/gymtrackr/privacy/"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+<body class="app-gymtrackr">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+      Technook
+    </a>
+    <ul class="nav-links">
+      <li><a href="/gymtrackr/privacy/" aria-current="page">Privacy Policy</a></li>
+      <li><a href="/gymtrackr/support/">Support</a></li>
+    </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:devtools@theforgelabs.io">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
+  </nav>
+
+  <header class="wrap doc-hero">
+    <span class="badge fu"><i aria-hidden="true"></i>GymTrackr</span>
+    <h1><span class="ln"><span>Privacy Policy</span></span></h1>
+    <p class="fu" style="--d:.2s">Last updated: August 2026 &nbsp;&middot;&nbsp; Effective immediately</p>
+  </header>
+
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
+
+      <div class="pp-section">
+        <h2>The short version</h2>
+        <p><strong>GymTrackr has no internet permission.</strong> It is not that the app chooses not to send your data anywhere &mdash; Android will not let it, because the permission required to open a network connection is not in the app. Everything you log stays in a database on your phone. There is no account, no server, no analytics, no advertising and no crash reporting. Uninstalling the app deletes all of it.</p>
+        <div class="note-box">You do not have to take this on trust. Any APK analyser will show the permission list, and <code>android.permission.INTERNET</code> is not on it.</div>
+      </div>
+
+      <div class="pp-section">
+        <h2>1. Who this is</h2>
+        <p>GymTrackr is an independent app built by Technook. The developer is the data controller. Contact: <strong>devtools@theforgelabs.io</strong>.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>2. What GymTrackr stores, and where</h2>
+        <p>Everything below lives in a private database inside the app's own storage on your device. No copy is held anywhere else.</p>
+        <ul>
+          <li><strong>Your workouts.</strong> Exercises, sets, weights, repetitions, rest times, session dates and durations, personal records, routines and programmes.</li>
+          <li><strong>Your body measurements.</strong> Weight, body-fat percentage and lean mass, and anything derived from them such as BMI, BMR and TDEE.</li>
+          <li><strong>Your profile.</strong> A display name you choose, age, height and sex. Sex is used only for body-composition and energy-expenditure formulas.</li>
+          <li><strong>Health Connect readings</strong>, if you grant access. See section 4.</li>
+          <li><strong>Custom exercise photos</strong>, if you take any. See section 5.</li>
+          <li><strong>Your settings.</strong> Units, plate increments, reminder preferences and which dashboard cards you show.</li>
+        </ul>
+        <p>GymTrackr does not ask for your email address, phone number, postal address, contacts, precise location, or any advertising identifier. There is no sign-in of any kind.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>3. What the app is technically able to do</h2>
+        <p>Stating the permissions plainly, because a list of promises is worth less than a list of capabilities:</p>
+        <div class="tbl-wrap"><table class="perm">
+          <thead><tr><th>Permission</th><th>Why it is there</th></tr></thead>
+          <tbody>
+            <tr><td class="p">ACTIVITY_RECOGNITION</td><td>Required by Android before any app may read step and activity data.</td></tr>
+            <tr><td class="p">CAMERA</td><td>Only to photograph a custom exercise you create. Never opened otherwise.</td></tr>
+            <tr><td class="p">POST_NOTIFICATIONS</td><td>Rest timers and reminders. All generated on the device.</td></tr>
+            <tr><td class="p">VIBRATE</td><td>Haptic feedback when a set is logged and when a rest timer ends.</td></tr>
+            <tr><td class="p">WAKE_LOCK<br/>FOREGROUND_SERVICE<br/>RECEIVE_BOOT_COMPLETED</td><td>Added by Android's WorkManager library so a scheduled reminder survives a reboot.</td></tr>
+            <tr><td class="p">ACCESS_NETWORK_STATE</td><td>Declared by a bundled Google library. It reports whether a connection exists. Without <code>INTERNET</code> the app cannot use one.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note-box"><strong>INTERNET is absent.</strong> No network request can be made by this app, so no data can be transmitted to Technook or to anyone else &mdash; including us.</div>
+      </div>
+
+      <div class="pp-section">
+        <h2>4. Health Connect</h2>
+        <p>GymTrackr can read health data from Health Connect, Android's on-device health store, so your lifting and your recovery sit on one screen. <strong>Nothing is granted unless you grant it</strong>, each permission is requested separately, and the app works without any of them.</p>
+        <p>Everything read is stored on your phone alongside your workouts and is used only to draw the screens described below. It is never used for advertising or profiling, never sold, and &mdash; because the app has no network access &mdash; never transmitted anywhere.</p>
+        <div class="tbl-wrap"><table class="perm">
+          <thead><tr><th>Data</th><th>What it is used for, in the app</th></tr></thead>
+          <tbody>
+            <tr><td class="p">READ_STEPS</td><td>Steps card and steps trend chart on the Health screen.</td></tr>
+            <tr><td class="p">READ_HEART_RATE</td><td>Heart-rate card and trend, as a recovery signal beside your training.</td></tr>
+            <tr><td class="p">READ_TOTAL_CALORIES_BURNED</td><td>Calories-burned card and trend, and comparison against your estimated TDEE.</td></tr>
+            <tr><td class="p">READ_SLEEP</td><td>Sleep duration card and trend, shown next to training volume.</td></tr>
+            <tr><td class="p">READ_DISTANCE</td><td>Distance card on the Health screen.</td></tr>
+            <tr><td class="p">READ_OXYGEN_SATURATION</td><td>Blood-oxygen card on the Health screen.</td></tr>
+            <tr><td class="p">READ_WEIGHT</td><td>Weight history and chart, so readings from a smart scale appear without retyping. Feeds BMI, BMR and TDEE.</td></tr>
+            <tr><td class="p">READ_BODY_FAT</td><td>Body-fat percentage on the Body Composition screen and its trend.</td></tr>
+            <tr><td class="p">READ_LEAN_BODY_MASS</td><td>Lean-mass figure on the Body Composition screen and its trend.</td></tr>
+            <tr><td class="p">WRITE_WEIGHT</td><td>The only thing written back. A weight you log in GymTrackr is saved to Health Connect so your other health apps stay in step. Nothing else is ever written.</td></tr>
+          </tbody>
+        </table></div>
+        <p style="margin-top:16px;">You can withdraw any of these at any time in Health Connect, or from inside GymTrackr. Withdrawing stops all further reading immediately. Readings already imported remain in your local database until you delete them, and "Delete all data" in Settings removes them along with everything else.</p>
+        <p>GymTrackr does not read any Health Connect data type not listed above, and never writes anything other than body weight.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>5. Camera and photos</h2>
+        <p>The camera is used in exactly one place: creating a custom exercise, where you may photograph it. The image is saved in the app's private storage on your phone. It is not uploaded, not added to your gallery, and not readable by other apps. Deleting the exercise deletes the photo.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>6. Notifications</h2>
+        <p>Rest timers and training reminders are scheduled and generated entirely on your phone. There is no push service, no notification content leaves the device, and none of it could leave &mdash; see section 3.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>7. Backups, and the one way data leaves</h2>
+        <p>Because nothing is stored on a server, <strong>a backup file is your only copy</strong>. Settings offers an export that writes your whole database to a file you choose.</p>
+        <ul>
+          <li>Where that file goes afterwards is outside GymTrackr's control. If you save it to a cloud drive, that provider's terms then apply to it.</li>
+          <li>Android's own backup service may include app data if you have device backup switched on. That is a Google feature governed by Google's terms, and you can exclude the app in your device settings.</li>
+          <li><strong>Uninstalling deletes everything.</strong> Without a backup file it cannot be recovered, by you or by us.</li>
+        </ul>
+      </div>
+
+      <div class="pp-section">
+        <h2>8. Who else processes it</h2>
+        <p><strong>Nobody.</strong> There are no processors, because there is nowhere for the data to be processed. GymTrackr contains no advertising SDK, no analytics SDK and no crash-reporting SDK. Nothing about how you use the app is reported anywhere, including to Technook.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>9. How long it is kept, and deleting it</h2>
+        <p>Your data stays until you remove it. Two ways:</p>
+        <ul>
+          <li><strong>Delete all data</strong> in Settings clears the database immediately and permanently.</li>
+          <li><strong>Uninstalling the app</strong> removes the database, custom exercise photos and settings with it.</li>
+        </ul>
+        <p>Neither can be undone, and neither requires contacting us &mdash; there is no account to close.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>10. Your rights</h2>
+        <p>You can access and export everything from Settings, correct anything by editing it, and erase all of it with one action. Because the data never leaves your device, there is nothing held elsewhere for us to disclose, correct or delete on your behalf. If you have a question, write to <strong>devtools@theforgelabs.io</strong>.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>11. Health disclaimer</h2>
+        <p>GymTrackr is a training log. Figures such as BMI, BMR, TDEE, estimated one-rep max and body-fat ranges are arithmetic on numbers you or your devices supplied. They are not medical advice, not a diagnosis, and not a substitute for a doctor.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>12. Children</h2>
+        <p>GymTrackr is not directed at children and is not intended for anyone under 16.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>13. Changes</h2>
+        <p>If a future version adds anything that sends data off your device, this policy will be updated and the app will tell you before it takes effect. It would also require adding the internet permission, which is visible on the Play listing before you update.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>GymTrackr: Strong, with your watch's data baked in &mdash; and your data stays on your phone.<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:devtools@theforgelabs.io">devtools@theforgelabs.io</a>
+      </div>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">GymTrackr</h2><a href="/gymtrackr/privacy/" aria-current="page">Privacy Policy</a><a href="/gymtrackr/support/">Support</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
+      </div>
+    </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; GymTrackr</span><span>Made in Delhi</span></div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -5,81 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy &mdash; Ova</title>
   <meta name="description" content="How Ova stores your cycle data, who can read it, and what is never shared. Written to be read."/>
-  <meta name="theme-color" content="#0D0C0C"/>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="canonical" href="https://technook.in/ova/privacy/"/>
   <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
-  <style>
-    :root {
-      --teal: #C2536B; --teal-dark: #A33F55; --teal-dim: #8A3446;
-      --teal-light: #FCEBEF; --teal-xlight: #FEF6F8;
-    }
-    .hero-gradient { background: linear-gradient(135deg, #201D1C 0%, #14120F 55%, #0D0C0C 100%); }
-    .pp-hero { padding: 64px 24px 56px; text-align: center; }
-    .pp-hero h1 { font-family: 'Inter', sans-serif; font-size: clamp(30px, 5vw, 44px); color: #fff; margin: 16px 0 8px; }
-    .pp-hero p { color: rgba(255,255,255,0.85); font-size: 16px; }
-
-    .pp-body { padding: 48px 24px 80px; }
-    .pp-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 20px; }
-    .pp-section h2 { font-family: 'Inter', sans-serif; font-size: 21px; color: var(--text); margin-bottom: 16px; }
-    .pp-section p { font-size: 15px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.75; }
-    .pp-section strong { color: var(--text); }
-    .pp-section ul { padding-left: 20px; margin: 0 0 12px; }
-    .pp-section ul li { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-bottom: 8px; }
-
-    ol.steps-list { padding-left: 0; list-style: none; counter-reset: step; }
-    ol.steps-list li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--border);
-      font-size: 15px; color: var(--text-muted);
-    }
-    ol.steps-list li:last-child { border-bottom: none; }
-    ol.steps-list li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 32px; height: 32px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: #fff;
-      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;
-    }
-    ol.steps-list li strong { color: var(--text); }
-
-    ul.check { list-style: none; padding: 0; }
-    ul.check li { padding: 7px 0 7px 26px; position: relative; font-size: 15px; color: var(--text-muted); }
-    ul.check li::before { content: '\2713'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
-
-    .note-box { background: var(--teal-xlight); border-left: 4px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; font-size: 15px; color: var(--teal-dim); margin-top: 8px; }
-  </style>
 </head>
-<body>
+<body class="app-ova">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <nav>
-    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-ova-privacy-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-ova-privacy-1)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
       Technook
     </a>
     <ul class="nav-links">
       <li><a href="/ova/">Ova</a></li>
+      <li><a href="/ova/privacy/" aria-current="page">Privacy Policy</a></li>
       <li><a href="/ova/support/">Support</a></li>
-      <li><a href="/ova/privacy/">Privacy</a></li>
+      <li><a href="/ova/delete-account/">Delete account</a></li>
     </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:devtools@theforgelabs.io">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
   </nav>
 
-  <div class="hero-gradient">
-    <section class="pp-hero">
-      <span class="badge">Ova</span>
-      <h1>Privacy Policy</h1>
-      <p>Last updated: August 2026 &nbsp;&middot;&nbsp; Effective immediately</p>
-    </section>
-  </div>
+  <header class="wrap doc-hero">
+    <span class="badge fu"><img src="/assets/img/ova-icon.png" alt="" width="22" height="22"/>Ova</span>
+    <h1><span class="ln"><span>Privacy Policy</span></span></h1>
+    <p class="fu" style="--d:.2s">Last updated: August 2026 &nbsp;&middot;&nbsp; Effective immediately</p>
+  </header>
 
-  <div class="pp-body">
-    <div class="container-sm">
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
 
       <div class="pp-section">
         <h2>The short version</h2>
@@ -176,26 +139,24 @@
         <h2>13. Changes</h2>
         <p>If this policy changes in a way that affects what is stored or who can read it, the app will say so before the change takes effect.</p>
       </div>
-
-    </div>
+    </main>
   </div>
 
-  <footer>
-    <div class="footer-inner">
+  <footer class="foot">
+    <div class="wrap foot-in">
       <div>
-        <div class="footer-brand wordmark">Ova</div>
-        <p class="footer-tagline">Cycle tracking, and who else gets to see it.</p>
-        <p style="font-size:13px;">&copy; 2026 Technook &middot; technook.in</p>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>Ova: Cycle tracking, and who else gets to see it.<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:devtools@theforgelabs.io">devtools@theforgelabs.io</a>
       </div>
-      <div class="footer-links">
-        <a href="/ova/">App Home</a>
-        <a href="/ova/privacy/">Privacy Policy</a>
-        <a href="/ova/support/">Support</a>
-        <a href="/ova/delete-account/">Delete Account</a>
-        <a href="/">technook.in</a>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">Ova</h2><a href="/ova/">App home</a><a href="/ova/privacy/" aria-current="page">Privacy Policy</a><a href="/ova/support/">Support</a><a href="/ova/delete-account/">Delete account</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
       </div>
     </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; Ova</span><span>Made in Delhi</span></div>
   </footer>
 
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

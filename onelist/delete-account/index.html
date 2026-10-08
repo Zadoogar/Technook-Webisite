@@ -5,78 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Delete Your Account &amp; Data — OneList</title>
   <meta name="description" content="How to delete your OneList account and all associated data, in-app or by request."/>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="canonical" href="https://technook.in/onelist/delete-account/"/>
   <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
-  <style>
-    :root {
-      --teal: #7C3AED; --teal-dark: #6D28D9; --teal-dim: #5B21B6;
-      --teal-light: #EDE9FE; --teal-xlight: #F5F3FF;
-    }
-    .hero-gradient { background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 60%, #8B5CF6 100%); }
-
-    .pp-hero { padding: 64px 24px 56px; text-align: center; }
-    .pp-hero h1 { font-family: 'Inter', sans-serif; font-size: clamp(30px, 5vw, 44px); color: #fff; margin: 16px 0 8px; }
-    .pp-hero p { color: rgba(255,255,255,0.85); font-size: 16px; }
-
-    .pp-body { padding: 48px 24px 80px; }
-    .pp-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 20px; }
-    .pp-section h2 { font-family: 'Inter', sans-serif; font-size: 21px; color: var(--text); margin-bottom: 16px; }
-    .pp-section p { font-size: 15px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.75; }
-    .pp-section strong { color: var(--text); }
-
-    ol.steps-list { padding-left: 0; list-style: none; counter-reset: step; }
-    ol.steps-list li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--border);
-      font-size: 15px; color: var(--text-muted);
-    }
-    ol.steps-list li:last-child { border-bottom: none; }
-    ol.steps-list li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 32px; height: 32px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: #fff;
-      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;
-    }
-    ol.steps-list li strong { color: var(--text); }
-
-    ul.check { list-style: none; padding: 0; }
-    ul.check li { padding: 7px 0 7px 26px; position: relative; font-size: 15px; color: var(--text-muted); }
-    ul.check li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
-
-    .note-box { background: var(--teal-xlight); border-left: 4px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; font-size: 15px; color: var(--teal-dim); margin-top: 8px; }
-  </style>
 </head>
-<body>
+<body class="app-onelist">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <nav>
-    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-onelistdelete-account-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-onelistdelete-account-1)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
       Technook
     </a>
     <ul class="nav-links">
       <li><a href="/onelist/">OneList</a></li>
-      <li><a href="/onelist/privacy/">Privacy</a></li>
+      <li><a href="/onelist/privacy/">Privacy Policy</a></li>
+      <li><a href="/onelist/support/">Support</a></li>
+      <li><a href="/onelist/delete-account/" aria-current="page">Delete account</a></li>
     </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:echoanup@gmail.com">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
   </nav>
 
-  <div class="hero-gradient">
-    <section class="pp-hero">
-      <span class="badge">📝 OneList</span>
-      <h1>Delete Your Account &amp; Data</h1>
-      <p>You can remove your account and data at any time.</p>
-    </section>
-  </div>
+  <header class="wrap doc-hero">
+    <span class="badge fu"><img src="/assets/img/smartwishlist.png" alt="" width="22" height="22"/>OneList</span>
+    <h1><span class="ln"><span>Delete Your Account &amp; Data</span></span></h1>
+    <p class="fu" style="--d:.2s">You can remove your account and data at any time.</p>
+  </header>
 
-  <div class="pp-body">
-    <div class="container-sm">
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
 
       <div class="pp-section">
         <h2>Delete from inside the app</h2>
@@ -104,28 +70,27 @@
       <div class="pp-section">
         <h2>Prefer to request it by email?</h2>
         <p>If you can't access the app, email us from the address you signed up with and we'll delete your account and data for you:</p>
-        <p><a href="mailto:echoanup@gmail.com?subject=Delete%20my%20Smart%20Wishlist%20account" class="btn btn-primary" style="margin-top:4px;">📧 Request deletion by email</a></p>
+        <p><a href="mailto:echoanup@gmail.com?subject=Delete%20my%20Smart%20Wishlist%20account" class="btn btn-primary" style="margin-top:4px;">Request deletion by email</a></p>
         <p style="margin-top:14px;">Please include the email address used for your account. We'll process the request and confirm within <strong>30 days</strong>.</p>
       </div>
-
-    </div>
+    </main>
   </div>
 
-  <footer>
-    <div class="footer-inner">
+  <footer class="foot">
+    <div class="wrap foot-in">
       <div>
-        <div class="footer-brand wordmark">📝 OneList</div>
-        <p class="footer-tagline">Shared shopping lists &amp; wishlists for two.</p>
-        <p style="font-size:13px;">© 2026 Technook · technook.in</p>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>OneList: Shared shopping lists &amp; wishlists for two.<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:echoanup@gmail.com">echoanup@gmail.com</a>
       </div>
-      <div class="footer-links">
-        <a href="/onelist/">App Home</a>
-        <a href="/onelist/privacy/">Privacy Policy</a>
-        <a href="/onelist/support/">Support</a>
-        <a href="/">technook.in</a>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">OneList</h2><a href="/onelist/">App home</a><a href="/onelist/privacy/">Privacy Policy</a><a href="/onelist/support/">Support</a><a href="/onelist/delete-account/" aria-current="page">Delete account</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
       </div>
     </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; OneList</span><span>Made in Delhi</span></div>
   </footer>
 
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

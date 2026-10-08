@@ -5,214 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Support & FAQ — FamilyGuard</title>
   <meta name="description" content="FamilyGuard support, FAQs, and troubleshooting guide."/>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
-  <style>
-    .support-hero {
-      padding: 64px 24px 56px;
-      text-align: center;
-    }
-
-    .support-hero h1 {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(30px, 5vw, 44px);
-      color: #fff;
-      margin: 16px 0 8px;
-    }
-
-    .support-hero p { color: rgba(255,255,255,0.8); font-size: 16px; }
-
-    .support-body { padding: 48px 24px 80px; }
-
-    /* FAQ */
-    .faq-group { margin-bottom: 40px; }
-
-    .faq-group-title {
-      font-family: 'Inter', sans-serif;
-      font-size: 22px;
-      color: var(--text);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .faq-item {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      margin-bottom: 10px;
-      overflow: hidden;
-    }
-
-    .faq-q {
-      padding: 18px 20px;
-      font-weight: 600;
-      font-size: 15px;
-      color: var(--text);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      user-select: none;
-      transition: background 0.15s;
-    }
-
-    .faq-q:hover { background: var(--bg); }
-
-    .faq-q .arrow {
-      font-size: 12px;
-      color: var(--teal);
-      transition: transform 0.25s;
-      flex-shrink: 0;
-      margin-left: 12px;
-    }
-
-    .faq-a {
-      padding: 0 20px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s;
-    }
-
-    .faq-a p {
-      font-size: 15px;
-      color: var(--text-muted);
-      line-height: 1.7;
-      padding-bottom: 18px;
-    }
-
-    .faq-a ul {
-      padding-left: 20px;
-      margin-bottom: 16px;
-    }
-
-    .faq-a ul li {
-      font-size: 15px;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-    }
-
-    .faq-item.open .faq-q { background: var(--teal-xlight); }
-    .faq-item.open .faq-a { max-height: 600px; padding-top: 4px; }
-    .faq-item.open .arrow { transform: rotate(180deg); }
-
-    /* Quick links */
-    .quick-links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-bottom: 48px;
-    }
-
-    .quick-link {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      transition: box-shadow 0.2s, transform 0.2s;
-      color: inherit;
-    }
-
-    .quick-link:hover {
-      box-shadow: var(--shadow-hover);
-      transform: translateY(-2px);
-      color: inherit;
-    }
-
-    .quick-link .ql-icon { font-size: 28px; margin-bottom: 8px; }
-    .quick-link h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-    .quick-link p { font-size: 13px; color: var(--text-muted); }
-
-    /* Contact box */
-    .contact-box {
-      background: linear-gradient(135deg, var(--teal-dark), var(--teal));
-      border-radius: var(--radius);
-      padding: 40px;
-      text-align: center;
-      color: #fff;
-      margin-top: 48px;
-    }
-
-    .contact-box h3 {
-      font-family: 'Inter', sans-serif;
-      font-size: 26px;
-      margin-bottom: 8px;
-    }
-
-    .contact-box p {
-      color: rgba(255,255,255,0.82);
-      margin-bottom: 24px;
-      font-size: 16px;
-    }
-
-    .contact-box a {
-      display: inline-block;
-      background: #fff;
-      color: var(--teal-dark);
-      padding: 13px 28px;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      font-size: 15px;
-      text-decoration: none;
-      transition: transform 0.2s;
-    }
-
-    .contact-box a:hover { transform: translateY(-2px); color: var(--teal-dark); }
-  </style>
 </head>
-<body>
+<body class="app-familyguard">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <nav>
-    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-familyguardsupport-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-familyguardsupport-1)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
       Technook
     </a>
     <ul class="nav-links">
       <li><a href="/familyguard/">FamilyGuard</a></li>
-      <li><a href="/familyguard/privacy/">Privacy</a></li>
+      <li><a href="/familyguard/privacy/">Privacy Policy</a></li>
+      <li><a href="/familyguard/support/" aria-current="page">Support</a></li>
     </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:echoanup@gmail.com">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
   </nav>
 
-  <div class="hero-gradient">
-    <section class="support-hero">
-      <span class="badge">💬 FamilyGuard Support</span>
-      <h1>How can we help?</h1>
-      <p>Find answers to common questions below, or reach out directly.</p>
-    </section>
-  </div>
+  <header class="wrap doc-hero">
+    <span class="badge fu"><i aria-hidden="true"></i>FamilyGuard</span>
+    <h1><span class="ln"><span>How can we help?</span></span></h1>
+    <p class="fu" style="--d:.2s">Find answers to common questions below, or reach out directly.</p>
+  </header>
 
-  <div class="support-body">
-    <div class="container-sm">
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
 
       <!-- Quick Links -->
       <div class="quick-links">
         <a href="#setup" class="quick-link">
-          <div class="ql-icon">🚀</div>
           <h4>Getting Started</h4>
           <p>Setup and pairing guide</p>
         </a>
         <a href="#features" class="quick-link">
-          <div class="ql-icon">⭐</div>
           <h4>Features</h4>
           <p>How each feature works</p>
         </a>
         <a href="#troubleshoot" class="quick-link">
-          <div class="ql-icon">🔧</div>
           <h4>Troubleshooting</h4>
           <p>Fix common issues</p>
         </a>
         <a href="#privacy" class="quick-link">
-          <div class="ql-icon">🔒</div>
           <h4>Privacy</h4>
           <p>Data and permissions</p>
         </a>
@@ -220,11 +64,9 @@
 
       <!-- Setup FAQ -->
       <div class="faq-group" id="setup">
-        <div class="faq-group-title">🚀 Getting Started</div>
+        <div class="faq-group-title">Getting Started</div>
 
-        <div class="faq-item">
-          <div class="faq-q">How do I set up FamilyGuard? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I set up FamilyGuard?</summary><div class="faq-a">
             <p>Install FamilyGuard on both phones — your phone and your parent's phone.</p>
             <ul>
               <li><strong>On your parent's phone:</strong> Open the app, select "Guardian" mode, sign in with Google, complete the consent screen, and grant permissions. A QR code will be generated.</li>
@@ -232,45 +74,35 @@
             </ul>
             <p>That's it! The two devices are now paired and FamilyGuard is active.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">Do both phones need the same Google account? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Do both phones need the same Google account?</summary><div class="faq-a">
             <p>No — each phone uses a different Google account. Your parent signs in with their own Google account on their phone, and you sign in with your own Google account on your phone.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">What if my parent doesn't have a Google account? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">What if my parent doesn't have a Google account?</summary><div class="faq-a">
             <p>A Google account is required to use FamilyGuard (it's needed for secure authentication and Firebase). You can create a Google account for your parent during setup — it takes just a few minutes and just requires a name and a password.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">Can I re-install the app without losing the pairing? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Can I re-install the app without losing the pairing?</summary><div class="faq-a">
             <p>Yes. If you uninstall and reinstall the app and sign in with the same Google account, the pairing is automatically restored — no QR scan needed. This works for both Guardian and Watcher devices.</p>
           </div>
-        </div>
+        </details>
       </div>
 
       <!-- Features FAQ -->
       <div class="faq-group" id="features">
-        <div class="faq-group-title">⭐ Features</div>
+        <div class="faq-group-title">Features</div>
 
-        <div class="faq-item">
-          <div class="faq-q">How do I request my parent's location? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I request my parent's location?</summary><div class="faq-a">
             <p>On your Watcher dashboard, tap the <strong>"Request Location"</strong> button on the Home tab. Their phone will fetch a fresh GPS fix and send it to your map within 10 seconds.</p>
             <p>For continuous tracking, go to Profile → Parent Device Settings → set the interval → tap "Apply Live Tracking".</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">How does the SOS work? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How does the SOS work?</summary><div class="faq-a">
             <p>There are two ways to trigger SOS from the Guardian (parent) device:</p>
             <ul>
               <li><strong>Widget button:</strong> Tap the red SOS button on their home screen</li>
@@ -278,27 +110,21 @@
             </ul>
             <p>When triggered, you receive: a push notification, an SMS with a Google Maps link, and the Guardian phone auto-dials your number.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">What is the Wellness Check? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">What is the Wellness Check?</summary><div class="faq-a">
             <p>The Wellness Check lets you send a gentle "are you okay?" check to your parent without calling them.</p>
             <p>From your dashboard, tap "Wellness Check". Their phone shows a soft notification saying "Your family is checking on you 💙" with an "I'm Okay ✓" button. When they tap it, you see a green confirmation. If they don't respond within the timeout period, you receive an alert.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">How does fall detection work? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How does fall detection work?</summary><div class="faq-a">
             <p>FamilyGuard uses the phone's built-in accelerometer to detect falls. It looks for a sudden impact (the phone accelerating rapidly) followed by a period of stillness — the pattern of a fall.</p>
             <p>You can adjust the fall sensitivity in Profile → Parent Device Settings. If you get false alerts, increase the sensitivity threshold. The default setting works well for most situations.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">How do remote commands work? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How do remote commands work?</summary><div class="faq-a">
             <p>From your Watcher dashboard, you can send commands that execute on your parent's phone within seconds:</p>
             <ul>
               <li><strong>Request Location</strong> — get their current GPS</li>
@@ -308,16 +134,14 @@
               <li><strong>Call Me</strong> — their phone auto-dials your number</li>
             </ul>
           </div>
-        </div>
+        </details>
       </div>
 
       <!-- Troubleshooting -->
       <div class="faq-group" id="troubleshoot">
-        <div class="faq-group-title">🔧 Troubleshooting</div>
+        <div class="faq-group-title">Troubleshooting</div>
 
-        <div class="faq-item">
-          <div class="faq-q">SMS messages are not being forwarded <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">SMS messages are not being forwarded</summary><div class="faq-a">
             <p>This is usually a background service issue. Try these steps:</p>
             <ul>
               <li>Go to Android Settings → Apps → FamilyGuard → Battery → set to "Unrestricted" or "No restrictions"</li>
@@ -326,11 +150,9 @@
               <li>Make sure the SMS permission is granted: Settings → Apps → FamilyGuard → Permissions → SMS → Allow</li>
             </ul>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">Location is not updating / REQUEST LOCATION doesn't work <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Location is not updating / REQUEST LOCATION doesn't work</summary><div class="faq-a">
             <p>Check these settings on the parent's phone:</p>
             <ul>
               <li>Settings → Apps → FamilyGuard → Permissions → Location → set to "Allow all the time" (not just "While using the app")</li>
@@ -338,11 +160,9 @@
               <li>Battery optimization must be disabled for FamilyGuard (see above)</li>
             </ul>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">I'm not receiving push notifications <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">I'm not receiving push notifications</summary><div class="faq-a">
             <p>Check these on your Watcher phone:</p>
             <ul>
               <li>Settings → Apps → FamilyGuard → Notifications → make sure all channels are enabled</li>
@@ -351,11 +171,9 @@
               <li>If using battery saver mode, it can delay notifications — disable for FamilyGuard</li>
             </ul>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">The app stops working after some time on Xiaomi / MIUI <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">The app stops working after some time on Xiaomi / MIUI</summary><div class="faq-a">
             <p>MIUI aggressively kills background apps. You must do all of the following:</p>
             <ul>
               <li>Settings → Apps → Manage apps → FamilyGuard → Battery saver → No restrictions</li>
@@ -365,23 +183,19 @@
             </ul>
             <p>After making these changes, restart the phone and test again.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">How do I unlink the devices? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I unlink the devices?</summary><div class="faq-a">
             <p>On the Watcher phone: go to Profile → scroll to the bottom → tap "Unlink Guardian" → confirm. Both devices will be unlinked and return to the setup screen. All local data will be cleared.</p>
           </div>
-        </div>
+        </details>
       </div>
 
       <!-- Privacy FAQ -->
       <div class="faq-group" id="privacy">
-        <div class="faq-group-title">🔒 Privacy & Data</div>
+        <div class="faq-group-title">Privacy & Data</div>
 
-        <div class="faq-item">
-          <div class="faq-q">Does my parent know the app is installed? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Does my parent know the app is installed?</summary><div class="faq-a">
             <p>Yes, absolutely. FamilyGuard requires:</p>
             <ul>
               <li>Physical setup on the parent's phone — it cannot be installed remotely</li>
@@ -390,69 +204,48 @@
             </ul>
             <p>Additionally, a persistent notification is always visible when the app is running, and the app icon is always visible in the launcher. FamilyGuard is designed for use with the parent's full knowledge and consent — it is not a spy app.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">Who can see the data? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Who can see the data?</summary><div class="faq-a">
             <p>Only the single linked family member (Watcher) can see the data. Firebase security rules ensure that no other account — not even other FamilyGuard users — can access your family's data.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">How long is data stored? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How long is data stored?</summary><div class="faq-a">
             <p>Data in Firebase (the cloud) is automatically deleted after 24 hours. The Watcher's phone keeps a local cache in its own database. You can export alert history as a PDF from the Alerts tab before it's deleted.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-q">How do I delete all my data? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I delete all my data?</summary><div class="faq-a">
             <p>Uninstalling the app stops all data collection immediately. Firebase data auto-deletes after 24 hours. For immediate complete deletion of all Firebase data, contact us at the email below and we'll delete it manually.</p>
           </div>
-        </div>
+        </details>
       </div>
 
       <!-- Contact -->
       <div class="contact-box">
         <h3>Still need help?</h3>
         <p>Can't find what you're looking for? Send us an email and we'll get back to you.</p>
-        <a href="mailto:echoanup@gmail.com">📧 Email Support</a>
-        <br/><br/>
+        <a href="mailto:echoanup@gmail.com">Email Support</a>
       </div>
-
-    </div>
+    </main>
   </div>
 
-  <footer>
-    <div class="footer-inner">
+  <footer class="foot">
+    <div class="wrap foot-in">
       <div>
-        <div class="footer-brand wordmark">🛡️ FamilyGuard</div>
-        <p class="footer-tagline">Family Safety &amp; Remote Monitoring</p>
-        <p style="font-size:13px;">© 2026 Technook · technook.in</p>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>FamilyGuard: Family Safety &amp; Remote Monitoring<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:echoanup@gmail.com">echoanup@gmail.com</a>
       </div>
-      <div class="footer-links">
-        <a href="/familyguard/">App Home</a>
-        <a href="/familyguard/privacy/">Privacy Policy</a>
-        <a href="/">technook.in</a>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">FamilyGuard</h2><a href="/familyguard/">App home</a><a href="/familyguard/privacy/">Privacy Policy</a><a href="/familyguard/support/" aria-current="page">Support</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
       </div>
     </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; FamilyGuard</span><span>Made in Delhi</span></div>
   </footer>
 
-  <script>
-    // FAQ accordion
-    document.querySelectorAll('.faq-q').forEach(q => {
-      q.addEventListener('click', () => {
-        const item = q.parentElement;
-        const isOpen = item.classList.contains('open');
-        // Close all
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        // Open clicked if it was closed
-        if (!isOpen) item.classList.add('open');
-      });
-    });
-  </script>
-
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

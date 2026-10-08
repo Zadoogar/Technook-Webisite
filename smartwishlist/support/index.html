@@ -5,101 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Support &amp; FAQ — OneList</title>
   <meta name="description" content="OneList support, FAQs and troubleshooting — sharing lists, the widget, syncing, and account deletion."/>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
-  <style>
-    :root {
-      --teal: #7C3AED; --teal-dark: #6D28D9; --teal-dim: #5B21B6;
-      --teal-light: #EDE9FE; --teal-xlight: #F5F3FF;
-    }
-    .hero-gradient { background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 60%, #8B5CF6 100%); }
-
-    .support-hero { padding: 64px 24px 56px; text-align: center; }
-    .support-hero h1 { font-family: 'Inter', sans-serif; font-size: clamp(30px, 5vw, 44px); color: #fff; margin: 16px 0 8px; }
-    .support-hero p { color: rgba(255,255,255,0.85); font-size: 16px; }
-
-    .support-body { padding: 48px 24px 80px; }
-    .faq-group { margin-bottom: 40px; }
-    .faq-group-title { font-family: 'Inter', sans-serif; font-size: 22px; color: var(--text); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
-    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 10px; overflow: hidden; }
-    .faq-q { padding: 18px 20px; font-weight: 600; font-size: 15px; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.15s; }
-    .faq-q:hover { background: var(--bg); }
-    .faq-q .arrow { font-size: 12px; color: var(--teal); transition: transform 0.25s; flex-shrink: 0; margin-left: 12px; }
-    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; }
-    .faq-a p { font-size: 15px; color: var(--text-muted); line-height: 1.7; padding-bottom: 18px; }
-    .faq-a ul { padding-left: 20px; margin-bottom: 16px; }
-    .faq-a ul li { font-size: 15px; color: var(--text-muted); margin-bottom: 6px; }
-    .faq-item.open .faq-q { background: var(--teal-xlight); }
-    .faq-item.open .faq-a { max-height: 700px; padding-top: 4px; }
-    .faq-item.open .arrow { transform: rotate(180deg); }
-
-    .quick-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 48px; }
-    .quick-link { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px; text-align: center; text-decoration: none; transition: box-shadow 0.2s, transform 0.2s; color: inherit; }
-    .quick-link:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); color: inherit; }
-    .quick-link .ql-icon { font-size: 28px; margin-bottom: 8px; }
-    .quick-link h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-    .quick-link p { font-size: 13px; color: var(--text-muted); }
-
-    .contact-box { background: linear-gradient(135deg, var(--teal-dark), var(--teal)); border-radius: var(--radius); padding: 40px; text-align: center; color: #fff; margin-top: 48px; }
-    .contact-box h3 { font-family: 'Inter', sans-serif; font-size: 26px; margin-bottom: 8px; }
-    .contact-box p { color: rgba(255,255,255,0.85); margin-bottom: 24px; font-size: 16px; }
-    .contact-box a.email { display: inline-block; background: #fff; color: var(--teal-dark); padding: 13px 28px; border-radius: var(--radius-sm); font-weight: 700; font-size: 15px; text-decoration: none; transition: transform 0.2s; }
-    .contact-box a.email:hover { transform: translateY(-2px); color: var(--teal-dark); }
-  </style>
 </head>
-<body>
+<body class="app-onelist">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <nav>
-    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-smartwishlistsupport-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-smartwishlistsupport-1)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
       Technook
     </a>
     <ul class="nav-links">
       <li><a href="/onelist/">OneList</a></li>
-      <li><a href="/onelist/privacy/">Privacy</a></li>
+      <li><a href="/onelist/privacy/">Privacy Policy</a></li>
+      <li><a href="/onelist/support/" aria-current="page">Support</a></li>
+      <li><a href="/onelist/delete-account/">Delete account</a></li>
     </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:echoanup@gmail.com">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
   </nav>
 
-  <div class="hero-gradient">
-    <section class="support-hero">
-      <span class="badge">💬 OneList Support</span>
-      <h1>How can we help?</h1>
-      <p>Find answers below, or reach out directly.</p>
-    </section>
-  </div>
+  <header class="wrap doc-hero">
+    <span class="badge fu"><img src="/assets/img/smartwishlist.png" alt="" width="22" height="22"/>OneList</span>
+    <h1><span class="ln"><span>How can we help?</span></span></h1>
+    <p class="fu" style="--d:.2s">Find answers below, or reach out directly.</p>
+  </header>
 
-  <div class="support-body">
-    <div class="container-sm">
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
 
       <div class="quick-links">
-        <a href="#start" class="quick-link"><div class="ql-icon">🚀</div><h4>Getting Started</h4><p>Accounts &amp; sharing</p></a>
-        <a href="#features" class="quick-link"><div class="ql-icon">⭐</div><h4>Features</h4><p>Lists, links &amp; widget</p></a>
-        <a href="#troubleshoot" class="quick-link"><div class="ql-icon">🔧</div><h4>Troubleshooting</h4><p>Fix common issues</p></a>
-        <a href="#account" class="quick-link"><div class="ql-icon">🔒</div><h4>Account &amp; Privacy</h4><p>Data &amp; deletion</p></a>
+        <a href="#start" class="quick-link"><h4>Getting Started</h4><p>Accounts &amp; sharing</p></a>
+        <a href="#features" class="quick-link"><h4>Features</h4><p>Lists, links &amp; widget</p></a>
+        <a href="#troubleshoot" class="quick-link"><h4>Troubleshooting</h4><p>Fix common issues</p></a>
+        <a href="#account" class="quick-link"><h4>Account &amp; Privacy</h4><p>Data &amp; deletion</p></a>
       </div>
 
       <!-- Getting started -->
       <div class="faq-group" id="start">
-        <div class="faq-group-title">🚀 Getting Started</div>
+        <div class="faq-group-title">Getting Started</div>
 
-        <div class="faq-item">
-          <div class="faq-q">Is OneList free? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>Yes — completely free, with no ads and no subscriptions.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I create an account? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>Open the app, go to the <strong>Daily List</strong> or <strong>Profile</strong> tab and tap <strong>Sign In</strong> → <strong>Create Account</strong>. Enter an email and a password (at least 6 characters). That's it — your lists will now sync and can be shared.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I share a list with my partner? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Is OneList free?</summary><div class="faq-a"><p>Yes — completely free, with no ads and no subscriptions.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I create an account?</summary><div class="faq-a"><p>Open the app, go to the <strong>Daily List</strong> or <strong>Profile</strong> tab and tap <strong>Sign In</strong> → <strong>Create Account</strong>. Enter an email and a password (at least 6 characters). That's it — your lists will now sync and can be shared.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I share a list with my partner?</summary><div class="faq-a">
             <ul>
               <li>On your phone: create a list (the <strong>＋ New List</strong> button on the Daily List tab).</li>
               <li>Open the list → tap the ⓘ info icon → <strong>Share Invite Code</strong>, and send the 6-character code to your partner.</li>
@@ -107,34 +66,24 @@
             </ul>
             <p>You're now sharing the same list — changes appear on both phones live.</p>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Do we need the same account? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>No. Each person signs in with their own email account. Sharing happens through the invite code, not a shared login.</p></div>
-        </div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Do we need the same account?</summary><div class="faq-a"><p>No. Each person signs in with their own email account. Sharing happens through the invite code, not a shared login.</p></div>
+        </details>
       </div>
 
       <!-- Features -->
       <div class="faq-group" id="features">
-        <div class="faq-group-title">⭐ Features</div>
+        <div class="faq-group-title">Features</div>
 
-        <div class="faq-item">
-          <div class="faq-q">What's the difference between Daily List and Wishlist? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">What's the difference between Daily List and Wishlist?</summary><div class="faq-a">
             <p><strong>Daily List</strong> is for shared shopping/to-do lists that sync live with the people you invite. <strong>Wishlist</strong> is for organizing things you want — with prices, store, priority and a monthly budget. Wishlists are stored on your device by default, and you can choose to make one shared too.</p>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How does real-time sync work? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>When anyone on a shared list adds, edits or checks off an item, the change appears on every member's phone within a second or two (while the app is open). If you're offline, your changes are queued and sync automatically when you reconnect.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I add a product by sharing a link? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>In any shopping app or browser, use <strong>Share</strong> and pick OneList, or paste the link into the Add Item screen and tap <strong>Fetch Product Info</strong>. The app reads the page to fill in the product name, price and store automatically.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I add the home-screen widget? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How does real-time sync work?</summary><div class="faq-a"><p>When anyone on a shared list adds, edits or checks off an item, the change appears on every member's phone within a second or two (while the app is open). If you're offline, your changes are queued and sync automatically when you reconnect.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I add a product by sharing a link?</summary><div class="faq-a"><p>In any shopping app or browser, use <strong>Share</strong> and pick OneList, or paste the link into the Add Item screen and tap <strong>Fetch Product Info</strong>. The app reads the page to fill in the product name, price and store automatically.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I add the home-screen widget?</summary><div class="faq-a">
             <ul>
               <li>Long-press an empty area of your home screen → <strong>Widgets</strong>.</li>
               <li>Find <strong>OneList</strong> and drag it onto the home screen.</li>
@@ -142,24 +91,18 @@
             </ul>
             <p>You can then check items off right from the widget, and tap ＋ to open the list and add more. Add more than one widget for your other lists.</p>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I lock a wishlist with a PIN? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>Set a 4-digit PIN under <strong>Profile → PIN Lock</strong>. Your PIN is stored only on your device as a secure one-way hash — it never leaves your phone and we can't see it.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Can I back up my wishlists? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>Yes. Go to <strong>Profile → Export Wishlists</strong> to save a JSON backup file, and <strong>Import Wishlists</strong> to restore it later or move it to another phone.</p></div>
-        </div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I lock a wishlist with a PIN?</summary><div class="faq-a"><p>Set a 4-digit PIN under <strong>Profile → PIN Lock</strong>. Your PIN is stored only on your device as a secure one-way hash — it never leaves your phone and we can't see it.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Can I back up my wishlists?</summary><div class="faq-a"><p>Yes. Go to <strong>Profile → Export Wishlists</strong> to save a JSON backup file, and <strong>Import Wishlists</strong> to restore it later or move it to another phone.</p></div>
+        </details>
       </div>
 
       <!-- Troubleshooting -->
       <div class="faq-group" id="troubleshoot">
-        <div class="faq-group-title">🔧 Troubleshooting</div>
+        <div class="faq-group-title">Troubleshooting</div>
 
-        <div class="faq-item">
-          <div class="faq-q">The widget shows "Can't load widget" <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">The widget shows "Can't load widget"</summary><div class="faq-a">
             <p>This is a launcher caching hiccup that some phones (especially Xiaomi/MIUI) show when a widget is first added. To fix it:</p>
             <ul>
               <li>Remove the widget and add it again, or</li>
@@ -167,84 +110,59 @@
             </ul>
             <p>Once it loads the list once, it works normally after that.</p>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Changes aren't syncing to the other phone <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Changes aren't syncing to the other phone</summary><div class="faq-a">
             <ul>
               <li>Make sure both people are signed in and are members of the same list.</li>
               <li>Check that both phones have an internet connection.</li>
               <li>Open the list — sync resumes as soon as the app is open and online.</li>
             </ul>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">The invite code isn't working <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>Codes are 6 characters and not case-sensitive. Make sure the person joining is signed in first, and double-check for easily-confused characters. If it still fails, ask the list owner to re-open the list info page and share the code again.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">I forgot my PIN <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>The PIN protects local wishlists and is stored only as a hash on your device, so it can't be recovered. You can clear it by reinstalling the app (note: this also clears local wishlists — export a backup first if you can).</p></div>
-        </div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">The invite code isn't working</summary><div class="faq-a"><p>Codes are 6 characters and not case-sensitive. Make sure the person joining is signed in first, and double-check for easily-confused characters. If it still fails, ask the list owner to re-open the list info page and share the code again.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">I forgot my PIN</summary><div class="faq-a"><p>The PIN protects local wishlists and is stored only as a hash on your device, so it can't be recovered. You can clear it by reinstalling the app (note: this also clears local wishlists — export a backup first if you can).</p></div>
+        </details>
       </div>
 
       <!-- Account & Privacy -->
       <div class="faq-group" id="account">
-        <div class="faq-group-title">🔒 Account &amp; Privacy</div>
+        <div class="faq-group-title">Account &amp; Privacy</div>
 
-        <div class="faq-item">
-          <div class="faq-q">Who can see my lists? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>A shared list is visible only to its members — the people who joined with its invite code. No one else, including other OneList users, can see it. Local wishlists stay on your device.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Do you show ads or sell my data? <span class="arrow">▼</span></div>
-          <div class="faq-a"><p>No. There are no ads, no analytics trackers, and we never sell or share your data with third parties. See the <a href="/onelist/privacy/">Privacy Policy</a> for full details.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I delete my account and data? <span class="arrow">▼</span></div>
-          <div class="faq-a">
+        <details class="faq-item" name="faq"><summary class="faq-q">Who can see my lists?</summary><div class="faq-a"><p>A shared list is visible only to its members — the people who joined with its invite code. No one else, including other OneList users, can see it. Local wishlists stay on your device.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Do you show ads or sell my data?</summary><div class="faq-a"><p>No. There are no ads, no analytics trackers, and we never sell or share your data with third parties. See the <a href="/onelist/privacy/">Privacy Policy</a> for full details.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I delete my account and data?</summary><div class="faq-a">
             <p>Open the app → <strong>Profile</strong> tab → <strong>Delete account</strong>. This permanently deletes your profile, the shared lists you own, and removes you from lists you joined.</p>
             <p>You can also request deletion by email — see the <a href="/onelist/delete-account/">account &amp; data deletion page</a>.</p>
           </div>
-        </div>
+        </details>
       </div>
 
       <div class="contact-box">
         <h3>Still need help?</h3>
         <p>Can't find your answer? Send us an email and we'll get back to you.</p>
-        <a class="email" href="mailto:echoanup@gmail.com">📧 Email Support</a>
-        <br/><br/>
+        <a class="email" href="mailto:echoanup@gmail.com">Email Support</a>
       </div>
-
-    </div>
+    </main>
   </div>
 
-  <footer>
-    <div class="footer-inner">
+  <footer class="foot">
+    <div class="wrap foot-in">
       <div>
-        <div class="footer-brand wordmark">📝 OneList</div>
-        <p class="footer-tagline">Shared shopping lists &amp; wishlists for two.</p>
-        <p style="font-size:13px;">© 2026 Technook · technook.in</p>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>OneList: Shared shopping lists &amp; wishlists for two.<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:echoanup@gmail.com">echoanup@gmail.com</a>
       </div>
-      <div class="footer-links">
-        <a href="/onelist/">App Home</a>
-        <a href="/onelist/privacy/">Privacy Policy</a>
-        <a href="/onelist/delete-account/">Delete account</a>
-        <a href="/">technook.in</a>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">OneList</h2><a href="/onelist/">App home</a><a href="/onelist/privacy/">Privacy Policy</a><a href="/onelist/support/" aria-current="page">Support</a><a href="/onelist/delete-account/">Delete account</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
       </div>
     </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; OneList</span><span>Made in Delhi</span></div>
   </footer>
 
-  <script>
-    document.querySelectorAll('.faq-q').forEach(q => {
-      q.addEventListener('click', () => {
-        const item = q.parentElement;
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!isOpen) item.classList.add('open');
-      });
-    });
-  </script>
-
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

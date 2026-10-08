@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support &mdash; GymTrackr</title>
+  <meta name="description" content="Help with GymTrackr: Health Connect, backups, custom exercises and getting your data out."/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="canonical" href="https://technook.in/gymtrackr/support/"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+<body class="app-gymtrackr">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+      Technook
+    </a>
+    <ul class="nav-links">
+      <li><a href="/gymtrackr/privacy/">Privacy Policy</a></li>
+      <li><a href="/gymtrackr/support/" aria-current="page">Support</a></li>
+    </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:devtools@theforgelabs.io">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
+  </nav>
+
+  <header class="wrap doc-hero">
+    <span class="badge fu"><i aria-hidden="true"></i>GymTrackr</span>
+    <h1><span class="ln"><span>Support</span></span></h1>
+    <p class="fu" style="--d:.2s">The questions that actually come up</p>
+  </header>
+
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
+
+      <div class="pp-section">
+        <h2>Health Connect</h2>
+
+        <h3>The health screen is empty</h3>
+        <p>Three things to check, in this order:</p>
+        <ul>
+          <li><strong>Is Health Connect installed?</strong> On Android 13 and earlier it is a separate app from the Play Store. On Android 14 and later it is built into Settings.</li>
+          <li><strong>Has anything written to it?</strong> Health Connect is a store, not a source. It stays empty until a watch, a phone's step counter, a smart scale or another fitness app writes to it. GymTrackr only reads.</li>
+          <li><strong>Are the permissions granted?</strong> Settings &rsaquo; Health Connect inside GymTrackr shows how many are on.</li>
+        </ul>
+
+        <h3>I only want to share some of it</h3>
+        <p>Every permission is separate. Grant steps and refuse sleep if you like &mdash; the cards you did not grant simply do not appear, and nothing else changes.</p>
+
+        <h3>Does GymTrackr change my health data?</h3>
+        <p>Only body weight, and only when you log one. Everything else is read-only. Full detail is on the <a href="/gymtrackr/privacy/">privacy page</a>.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>Your data</h2>
+
+        <h3>Where is it stored?</h3>
+        <p>On your phone, and only on your phone. GymTrackr has no account and no internet permission, so there is no copy on a server anywhere.</p>
+
+        <div class="note-box"><strong>This cuts both ways.</strong> Nobody can read your training data, and nobody can restore it for you either. If you lose your phone without a backup file, it is gone.</div>
+
+        <h3>Backing up</h3>
+        <p>Settings &rsaquo; Back up &amp; restore &rsaquo; Export writes everything to a single file. Keep it somewhere that is not the same phone. The screen shows the date of your last export so you can see at a glance whether you are overdue.</p>
+
+        <h3>Moving to a new phone</h3>
+        <p>Export on the old phone, install GymTrackr on the new one, then Settings &rsaquo; Back up &amp; restore &rsaquo; Restore and pick the file. Do the export <em>before</em> you wipe the old device.</p>
+
+        <h3>Deleting everything</h3>
+        <p>Settings &rsaquo; Delete all data clears it immediately, or just uninstall the app. There is no account to close and nothing to email us about.</p>
+      </div>
+
+      <div class="pp-section">
+        <h2>Training</h2>
+
+        <h3>An exercise I do is not in the list</h3>
+        <p>Add it: the exercise picker has "Create a custom exercise" at the bottom. Pick its equipment and the muscles it works &mdash; those drive the body map and your weekly coverage, so choose the muscles the lift actually trains rather than everything it touches.</p>
+
+        <h3>My weights are in pounds</h3>
+        <p>Settings &rsaquo; Units. You can also set the plate increment there, so the plus and minus buttons step by the smallest plate you actually own.</p>
+
+        <h3>The rest timer keeps starting on its own</h3>
+        <p>That is deliberate &mdash; it starts when you tick a set so it cannot be forgotten. Skip dismisses it, and it never covers the sets you are reading.</p>
+      </div>
+
+      <div class="pp-section contact">
+        <h2>Still stuck?</h2>
+        <p>One person reads this address, and it is the developer.</p>
+        <p><a href="mailto:devtools@theforgelabs.io">devtools@theforgelabs.io</a></p>
+        <p style="font-size:13.5px;">Including your Android version and phone model saves a round trip.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>GymTrackr: Strong, with your watch's data baked in &mdash; and your data stays on your phone.<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:devtools@theforgelabs.io">devtools@theforgelabs.io</a>
+      </div>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">GymTrackr</h2><a href="/gymtrackr/privacy/">Privacy Policy</a><a href="/gymtrackr/support/" aria-current="page">Support</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
+      </div>
+    </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; GymTrackr</span><span>Made in Delhi</span></div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

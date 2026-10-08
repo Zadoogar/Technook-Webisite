@@ -5,155 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Support &mdash; Ova</title>
   <meta name="description" content="Answers about sharing, basal temperature, privacy and deleting your Ova account."/>
-  <meta name="theme-color" content="#0D0C0C"/>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="canonical" href="https://technook.in/ova/support/"/>
   <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
-  <style>
-    :root {
-      --teal: #C2536B; --teal-dark: #A33F55; --teal-dim: #8A3446;
-      --teal-light: #FCEBEF; --teal-xlight: #FEF6F8;
-    }
-    .hero-gradient { background: linear-gradient(135deg, #201D1C 0%, #14120F 55%, #0D0C0C 100%); }
-    .pp-hero { padding: 64px 24px 56px; text-align: center; }
-    .pp-hero h1 { font-family: 'Inter', sans-serif; font-size: clamp(30px, 5vw, 44px); color: #fff; margin: 16px 0 8px; }
-    .pp-hero p { color: rgba(255,255,255,0.85); font-size: 16px; }
-
-    .pp-body { padding: 48px 24px 80px; }
-    .pp-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 20px; }
-    .pp-section h2 { font-family: 'Inter', sans-serif; font-size: 21px; color: var(--text); margin-bottom: 16px; }
-    .pp-section p { font-size: 15px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.75; }
-    .pp-section strong { color: var(--text); }
-    .pp-section ul { padding-left: 20px; margin: 0 0 12px; }
-    .pp-section ul li { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-bottom: 8px; }
-
-    ol.steps-list { padding-left: 0; list-style: none; counter-reset: step; }
-    ol.steps-list li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--border);
-      font-size: 15px; color: var(--text-muted);
-    }
-    ol.steps-list li:last-child { border-bottom: none; }
-    ol.steps-list li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 32px; height: 32px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: #fff;
-      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;
-    }
-    ol.steps-list li strong { color: var(--text); }
-
-    ul.check { list-style: none; padding: 0; }
-    ul.check li { padding: 7px 0 7px 26px; position: relative; font-size: 15px; color: var(--text-muted); }
-    ul.check li::before { content: '\2713'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
-
-    .note-box { background: var(--teal-xlight); border-left: 4px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; font-size: 15px; color: var(--teal-dim); margin-top: 8px; }
-    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 10px; overflow: hidden; }
-    .faq-q { padding: 18px 20px; font-weight: 600; font-size: 15px; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.15s; }
-    .faq-q:hover { background: var(--bg); }
-    .faq-q .arrow { font-size: 12px; color: var(--teal); transition: transform 0.25s; flex-shrink: 0; margin-left: 12px; }
-    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; }
-    .faq-a p { font-size: 15px; color: var(--text-muted); line-height: 1.7; padding-bottom: 18px; }
-    .faq-item.open .faq-q { background: var(--teal-xlight); }
-    .faq-item.open .faq-a { max-height: 700px; padding-top: 4px; }
-    .faq-item.open .arrow { transform: rotate(180deg); }
-    .faq-group { margin-bottom: 40px; }
-    .faq-group-title { font-family: 'Inter', sans-serif; font-size: 22px; color: var(--text); margin-bottom: 16px; }
-  </style>
 </head>
-<body>
+<body class="app-ova">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <nav>
-    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-ova-support-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-ova-support-1)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
       Technook
     </a>
     <ul class="nav-links">
       <li><a href="/ova/">Ova</a></li>
-      <li><a href="/ova/support/">Support</a></li>
-      <li><a href="/ova/privacy/">Privacy</a></li>
+      <li><a href="/ova/privacy/">Privacy Policy</a></li>
+      <li><a href="/ova/support/" aria-current="page">Support</a></li>
+      <li><a href="/ova/delete-account/">Delete account</a></li>
     </ul>
+    <a class="btn btn-ghost btn-sm" href="mailto:devtools@theforgelabs.io">Email us</a>
+    <span class="progress" aria-hidden="true"></span>
   </nav>
 
-  <div class="hero-gradient">
-    <section class="pp-hero">
-      <span class="badge">Ova</span>
-      <h1>How can we help?</h1>
-      <p>Answers to the things people ask most.</p>
-    </section>
-  </div>
+  <header class="wrap doc-hero">
+    <span class="badge fu"><img src="/assets/img/ova-icon.png" alt="" width="22" height="22"/>Ova</span>
+    <h1><span class="ln"><span>How can we help?</span></span></h1>
+    <p class="fu" style="--d:.2s">Answers to the things people ask most.</p>
+  </header>
 
-  <div class="pp-body">
-    <div class="container-sm">
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="On this page"></nav>
+    <main class="doc" id="main">
+
 
       <div class="faq-group">
         <div class="faq-group-title">Getting started</div>
-        <div class="faq-item">
-          <div class="faq-q">Is Ova free? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Yes. No ads, no subscription, no paid tier. There is nothing in the app that makes money from your data.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Why does it only offer Google sign-in? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>So your data can reach your other devices and so a share can point at a real account. Ova never sees your Google password, and it does not store your email address.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Do I have to log anything to use it? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>No. The app works with nothing logged &mdash; it just cannot tell you much. Predictions get better the more you log, and worse the less you do.</p></div>
-        </div>
+        <details class="faq-item" name="faq"><summary class="faq-q">Is Ova free?</summary><div class="faq-a"><p>Yes. No ads, no subscription, no paid tier. There is nothing in the app that makes money from your data.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Why does it only offer Google sign-in?</summary><div class="faq-a"><p>So your data can reach your other devices and so a share can point at a real account. Ova never sees your Google password, and it does not store your email address.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Do I have to log anything to use it?</summary><div class="faq-a"><p>No. The app works with nothing logged &mdash; it just cannot tell you much. Predictions get better the more you log, and worse the less you do.</p></div>
+        </details>
       </div>
 
       <div class="faq-group">
         <div class="faq-group-title">Sharing</div>
-        <div class="faq-item">
-          <div class="faq-q">What exactly does someone see when I share with them? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Only the categories you granted, and only the days you logged. They never see predictions or your fertile window &mdash; that is refused by the server, not just hidden in the app.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Can I change my mind after sharing? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Yes. You can change which categories a person sees, pause them, or remove them entirely. Removal takes effect immediately.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Can they tell that I looked at their data? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Yes, and you can tell when they looked at yours. Looking is visible in both directions, on purpose.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">What happens if I send an invite link to the wrong person? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>The first person to open it can accept it. If you think a link went astray, remove that person from your Circle &mdash; access ends immediately.</p></div>
-        </div>
+        <details class="faq-item" name="faq"><summary class="faq-q">What exactly does someone see when I share with them?</summary><div class="faq-a"><p>Only the categories you granted, and only the days you logged. They never see predictions or your fertile window &mdash; that is refused by the server, not just hidden in the app.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Can I change my mind after sharing?</summary><div class="faq-a"><p>Yes. You can change which categories a person sees, pause them, or remove them entirely. Removal takes effect immediately.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Can they tell that I looked at their data?</summary><div class="faq-a"><p>Yes, and you can tell when they looked at yours. Looking is visible in both directions, on purpose.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">What happens if I send an invite link to the wrong person?</summary><div class="faq-a"><p>The first person to open it can accept it. If you think a link went astray, remove that person from your Circle &mdash; access ends immediately.</p></div>
+        </details>
       </div>
 
       <div class="faq-group">
         <div class="faq-group-title">Basal temperature</div>
-        <div class="faq-item">
-          <div class="faq-q">I connected Health Connect but nothing was imported. <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Most watches and bands record <em>skin</em> temperature, which is a different measurement. Ova reads only true basal body temperature readings, so if your device records the other kind there is nothing for it to import. That is the device, not a fault in the app.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Is my temperature shared with anyone? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Never. It is not offered as a category when you invite someone, and the server refuses to serve it to a viewer under any configuration. A temperature curve says whether you ovulated, which is a conclusion about your body rather than a date.</p></div>
-        </div>
+        <details class="faq-item" name="faq"><summary class="faq-q">I connected Health Connect but nothing was imported.</summary><div class="faq-a"><p>Most watches and bands record <em>skin</em> temperature, which is a different measurement. Ova reads only true basal body temperature readings, so if your device records the other kind there is nothing for it to import. That is the device, not a fault in the app.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Is my temperature shared with anyone?</summary><div class="faq-a"><p>Never. It is not offered as a category when you invite someone, and the server refuses to serve it to a viewer under any configuration. A temperature curve says whether you ovulated, which is a conclusion about your body rather than a date.</p></div>
+        </details>
       </div>
 
       <div class="faq-group">
         <div class="faq-group-title">Privacy and data</div>
-        <div class="faq-item">
-          <div class="faq-q">Is my data end-to-end encrypted? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>No, and we would rather say so than let you assume otherwise. It is encrypted in transit and stored in a form the service can read. Ova does not read it and access is enforced by server-side rules, but a policy is not the same as cryptography.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How do I delete everything? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>Settings &rarr; Delete account, inside the app. It removes the copy on the server too, and ends every share the moment you confirm. Full details on the <a href="/ova/delete-account/">delete account page</a>.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Can I use this as contraception? <span class="arrow">&#9660;</span></div>
-          <div class="faq-a"><p>No. Ova is not contraception and not a medical device. Predictions are arithmetic on the dates you logged. Anything that looks like a health concern is a conversation for a doctor.</p></div>
-        </div>
+        <details class="faq-item" name="faq"><summary class="faq-q">Is my data end-to-end encrypted?</summary><div class="faq-a"><p>No, and we would rather say so than let you assume otherwise. It is encrypted in transit and stored in a form the service can read. Ova does not read it and access is enforced by server-side rules, but a policy is not the same as cryptography.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">How do I delete everything?</summary><div class="faq-a"><p>Settings &rarr; Delete account, inside the app. It removes the copy on the server too, and ends every share the moment you confirm. Full details on the <a href="/ova/delete-account/">delete account page</a>.</p></div>
+        </details>
+        <details class="faq-item" name="faq"><summary class="faq-q">Can I use this as contraception?</summary><div class="faq-a"><p>No. Ova is not contraception and not a medical device. Predictions are arithmetic on the dates you logged. Anything that looks like a health concern is a conversation for a doctor.</p></div>
+        </details>
       </div>
 
       <div class="pp-section">
@@ -161,32 +89,24 @@
         <p>Email us and we will get back to you. Please say which phone and Android version you are on &mdash; it saves a round trip.</p>
         <p><a href="mailto:devtools@theforgelabs.io?subject=Ova%20support" class="btn btn-primary" style="margin-top:4px;">Email support</a></p>
       </div>
-
-    </div>
+    </main>
   </div>
 
-  <script>
-    document.querySelectorAll('.faq-q').forEach(function (q) {
-      q.addEventListener('click', function () { q.parentElement.classList.toggle('open'); });
-    });
-  </script>
-
-  <footer>
-    <div class="footer-inner">
+  <footer class="foot">
+    <div class="wrap foot-in">
       <div>
-        <div class="footer-brand wordmark">Ova</div>
-        <p class="footer-tagline">Cycle tracking, and who else gets to see it.</p>
-        <p style="font-size:13px;">&copy; 2026 Technook &middot; technook.in</p>
+        <a href="/" class="brand"><svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg> Technook</a>
+        <p>Ova: Cycle tracking, and who else gets to see it.<br/>Built by Technook in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:devtools@theforgelabs.io">devtools@theforgelabs.io</a>
       </div>
-      <div class="footer-links">
-        <a href="/ova/">App Home</a>
-        <a href="/ova/privacy/">Privacy Policy</a>
-        <a href="/ova/support/">Support</a>
-        <a href="/ova/delete-account/">Delete Account</a>
-        <a href="/">technook.in</a>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">Ova</h2><a href="/ova/">App home</a><a href="/ova/privacy/">Privacy Policy</a><a href="/ova/support/" aria-current="page">Support</a><a href="/ova/delete-account/">Delete account</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/">technook.in</a><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
       </div>
     </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; Ova</span><span>Made in Delhi</span></div>
   </footer>
 
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Technook — Useful Android apps. No ads, no subscriptions.</title>
   <meta name="description" content="Technook builds small Android apps for everyday life — shared shopping lists, cycle tracking with per-person sharing, and family safety. Free, no ads, made in Delhi, India."/>
-  <meta name="theme-color" content="#7c3aed"/>
+  <meta name="theme-color" content="#0A0910"/>
 
   <meta property="og:title" content="Technook — Useful Android apps"/>
   <meta property="og:description" content="Small Android apps for everyday life. Free, offline-friendly, no ads."/>
@@ -14,270 +14,224 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
   <link rel="stylesheet" href="/assets/css/home.css"/>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <!-- NAV -->
-  <nav id="nav">
-    <a href="/" class="nav-brand wordmark" aria-label="Technook home">
-      <svg class="logo-mark" width="30" height="30" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-root-1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-root-1)"/>
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="brand" aria-label="Technook home">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tg)"/>
         <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
       </svg>
       Technook
     </a>
     <ul class="nav-links">
-      <li><a href="/#apps">Apps</a></li>
-      <li><a href="/#how">How we build</a></li>
-      <li><a href="/#contact">Contact</a></li>
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#how">How we build</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    <a class="btn btn-ghost btn-sm" href="#contact">Say hello</a>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-mesh" aria-hidden="true"><span></span><span></span></div>
+  <main id="main">
 
-    <svg class="hero-logo" width="32" height="32" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-root-2" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-root-2)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
-
-    <div class="section-label" data-reveal style="--reveal-delay:60ms; justify-content:center">Android apps · Delhi, India</div>
-    <h1 data-reveal style="--reveal-delay:120ms">Useful apps.<br/><em>No ads, no subscriptions.</em></h1>
-    <p class="hero-sub" data-reveal style="--reveal-delay:180ms">Technook builds small Android apps for everyday life — a shopping list you share with your partner, a cycle tracker where you choose who sees what, and a safety net for the people you look after.</p>
-    <div class="hero-tags" data-reveal style="--reveal-delay:240ms">
-      <span class="hero-tag">Free forever</span>
-      <span class="hero-tag">No ads</span>
-      <span class="hero-tag">Works offline</span>
-      <span class="hero-tag">8 languages</span>
-    </div>
-    <div class="hero-actions" data-reveal style="--reveal-delay:300ms">
-      <a href="/#apps" class="btn btn-primary">See our apps</a>
-      <a href="/#how" class="btn btn-outline">How we build</a>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div data-reveal><div class="stat-num">3</div><div class="stat-label">Apps built</div></div>
-      <div data-reveal style="--reveal-delay:60ms"><div class="stat-num">8</div><div class="stat-label">Languages supported</div></div>
-      <div data-reveal style="--reveal-delay:120ms"><div class="stat-num">0</div><div class="stat-label">Ads or paywalls</div></div>
-      <div data-reveal style="--reveal-delay:180ms"><div class="stat-num">Delhi</div><div class="stat-label">Where we build</div></div>
-    </div>
-  </div>
-
-  <!-- APPS -->
-  <section class="apps-section" id="apps">
-    <div class="container">
-      <div class="section-label" data-reveal>Our apps</div>
-      <h2 data-reveal style="--reveal-delay:60ms">Three apps, done properly</h2>
-      <p class="lead" data-reveal style="--reveal-delay:120ms">We'd rather build a few things people use every day than ten things nobody finishes setting up.</p>
-
-      <div class="apps-grid">
-
-        <!-- OneList (live) -->
-        <a href="/onelist/" class="app-card" data-reveal>
-          <div class="app-card-header">
-            <div class="app-icon">
-              <img src="/assets/img/smartwishlist.png" alt="" width="54" height="54" style="border-radius:15px;"/>
-            </div>
-            <div>
-              <h3>OneList</h3>
-              <p>Shared shopping lists, live on both phones</p>
-            </div>
-          </div>
-          <div class="app-card-body">
-            <p>One shopping list that lives on two phones. Add an item and your partner sees it in seconds — with quick-add built for Indian kitchens, a home-screen widget and five colour themes.</p>
-            <div class="app-features">
-              <span class="app-feature">Live sync</span>
-              <span class="app-feature">Shared lists</span>
-              <span class="app-feature">Home widget</span>
-              <span class="app-feature">Offline-tolerant</span>
-              <span class="app-feature">8 languages</span>
-            </div>
-          </div>
-          <div class="app-card-footer">
-            <span class="app-status"><span class="dot dot-green"></span>Live on Google Play</span>
-            <span class="app-link">Learn more
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- Ova (submitted) -->
-        <a href="/ova/" class="app-card" data-reveal style="--reveal-delay:100ms">
-          <div class="app-card-header">
-            <div class="app-icon">
-              <img src="/assets/img/ova-icon.png" alt="" width="54" height="54" style="border-radius:15px;"/>
-            </div>
-            <div>
-              <h3>Ova</h3>
-              <p>Cycle tracking, and who else gets to see it</p>
-            </div>
-          </div>
-          <div class="app-card-body">
-            <p>A period and cycle tracker built around the question other trackers skip: who else gets to see this? Share cycle dates with your mother and everything with your partner — category by category, revocable in one tap.</p>
-            <div class="app-features">
-              <span class="app-feature">Per-person sharing</span>
-              <span class="app-feature">Four tracking modes</span>
-              <span class="app-feature">Health Connect</span>
-              <span class="app-feature">No ads or analytics</span>
-            </div>
-          </div>
-          <div class="app-card-footer">
-            <span class="app-status"><span class="dot dot-amber"></span>Coming to Google Play</span>
-            <span class="app-link">Learn more
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- FamilyGuard (not shipped) -->
-        <a href="/familyguard/" class="app-card" data-reveal style="--reveal-delay:200ms">
-          <div class="app-card-header">
-            <div class="app-icon app-icon-slate">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
-              </svg>
-            </div>
-            <div>
-              <h3>FamilyGuard</h3>
-              <p>Family safety &amp; check-in</p>
-            </div>
-          </div>
-          <div class="app-card-body">
-            <p>Stay in touch with an elderly parent's phone — location, SOS alerts, fall detection and battery warnings, with consent and a visible notification on both sides.</p>
-            <div class="app-features">
-              <span class="app-feature">Live location</span>
-              <span class="app-feature">SOS &amp; fall detection</span>
-              <span class="app-feature">Battery alerts</span>
-              <span class="app-feature">Push notifications</span>
-            </div>
-          </div>
-          <div class="app-card-footer">
-            <span class="app-status"><span class="dot dot-amber"></span>In development</span>
-            <span class="app-link">Learn more
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </span>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE BUILD -->
-  <section class="values-section" id="how">
-    <div class="container">
-      <div class="section-label" data-reveal>How we build</div>
-      <h2 data-reveal style="--reveal-delay:60ms">What we won't do</h2>
-      <p class="lead" data-reveal style="--reveal-delay:120ms">Most of what makes an app annoying is a business decision, not a technical one. These are ours.</p>
-
-      <div class="values-grid">
-
-        <div class="value-card" data-reveal>
-          <div class="value-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div>
-          <h4>No ads. Ever.</h4>
-          <p>Not a banner between your groceries, not a full-screen one when you open the app. There is nothing to dismiss.</p>
-        </div>
-
-        <div class="value-card" data-reveal style="--reveal-delay:60ms">
-          <div class="value-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div>
-          <h4>No paywall at item 21</h4>
-          <p>No trial that expires, no "upgrade to add more". If a feature exists, it works from the first minute.</p>
-        </div>
-
-        <div class="value-card" data-reveal style="--reveal-delay:120ms">
-          <div class="value-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3.5V12c0 5.2-3.4 9.4-8 10.5C7.4 21.4 4 17.2 4 12V5.5L12 2z"/></svg></div>
-          <h4>Your data isn't the product</h4>
-          <p>We don't share your data with third parties. Your lists are yours; we have no reason to look at them.</p>
-        </div>
-
-        <div class="value-card" data-reveal style="--reveal-delay:180ms">
-          <div class="value-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8.5a16 16 0 0 1 20 0"/><path d="M5.5 12.5a11 11 0 0 1 13 0"/><path d="M9 16.5a6 6 0 0 1 6 0"/><circle cx="12" cy="20" r="1"/></svg></div>
-          <h4>Built for patchy signal</h4>
-          <p>Basement aisle with no bars? Add items anyway. Everything queues up and syncs the moment you're back online.</p>
-        </div>
-
-        <div class="value-card" data-reveal style="--reveal-delay:240ms">
-          <div class="value-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19"/><path d="M12 2.5a15 15 0 0 1 0 19a15 15 0 0 1 0-19z"/></svg></div>
-          <h4>Made for Indian homes</h4>
-          <p>Atta, dal, rice and sugar are one tap, not a search. Available in Hindi and seven other languages.</p>
-        </div>
-
-        <div class="value-card" data-reveal style="--reveal-delay:300ms">
-          <div class="value-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
-          <h4>Tested on real phones</h4>
-          <p>On the mid-range Android handsets people actually own, with real family data — not just a clean emulator.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact-section" id="contact">
-    <div class="container-sm">
-      <div class="section-label" data-reveal style="justify-content:center">Get in touch</div>
-      <h2 data-reveal style="--reveal-delay:60ms">Something broken? An idea?</h2>
-      <p data-reveal style="--reveal-delay:120ms">Bug reports, feature requests and collaborations all reach the same inbox — and get read by the person who wrote the code.</p>
-      <div class="contact-actions" data-reveal style="--reveal-delay:180ms">
-        <a href="mailto:echoanup@gmail.com" class="btn btn-primary">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="M2.5 7l9.5 6 9.5-6"/></svg>
-          Email Technook
-        </a>
-        <a href="/onelist/support/" class="btn btn-outline">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M9.6 9.2a2.5 2.5 0 1 1 3.3 2.4c-.6.2-.9.8-.9 1.4v.5"/><path d="M12 17h.01"/></svg>
-          Support &amp; FAQ
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
+    <!-- HERO -->
+    <header class="wrap hero">
       <div>
-        <div class="footer-brand wordmark">
-          <svg width="24" height="24" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <defs><linearGradient id="tnk-root-3" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/>
-        </linearGradient></defs>
-        <rect width="512" height="512" rx="112.6" fill="url(#tnk-root-3)"/>
-        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
-      </svg>
-          Technook
+        <p class="eyebrow fu">Android apps · Delhi, India</p>
+        <h1>
+          <span class="ln"><span>Useful apps.</span></span>
+          <span class="ln"><span style="--d:.12s"><span class="g">No ads, no subscriptions.</span></span></span>
+        </h1>
+        <p class="hero-sub fu" style="--d:.25s">Technook builds small Android apps for everyday life — a shopping list you share with your partner, a cycle tracker where you choose who sees what, and a safety net for the people you look after.</p>
+        <div class="cta-row fu" style="--d:.35s">
+          <a href="#apps" class="btn btn-primary">See our apps <svg class="ic arr" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+          <a href="#how" class="btn btn-ghost">How we build</a>
         </div>
-        <p class="footer-tagline">Everyday apps, done properly.</p>
-        <p style="font-size:13px;">An independent studio in Delhi, India.</p>
-        <p style="font-size:13px; margin-top:6px;">
-          <a href="mailto:echoanup@gmail.com">echoanup@gmail.com</a>
-        </p>
+        <dl class="facts fu" style="--d:.45s">
+          <div><dt>3</dt><dd>Apps built</dd></div>
+          <div><dt>8</dt><dd>Languages supported</dd></div>
+          <div><dt>0</dt><dd>Ads or paywalls</dd></div>
+          <div><dt>Delhi</dt><dd>Where we build</dd></div>
+        </dl>
       </div>
-      <div class="footer-links">
-        <a href="/onelist/">OneList</a>
-        <a href="/ova/">Ova</a>
-        <a href="/familyguard/">FamilyGuard</a>
-        <a href="/onelist/support/">Support</a>
-        <a href="/onelist/privacy/">Privacy</a>
-        <a href="/#contact">Contact</a>
+
+      <div class="fan">
+        <div class="ph ph-left">
+          <div class="device" style="--fd:-2s"><div class="screen">
+            <img class="on" src="/assets/img/screens/ova-home.webp" alt="Ova home screen: day 6 of a 27-day cycle on the cycle dial" width="600" height="1334"/>
+          </div></div>
+        </div>
+        <div class="ph ph-main">
+          <div class="device"><div class="screen" data-cycle>
+            <img class="on" src="/assets/img/screens/onelist-list.webp" alt="OneList Groceries list shared by you and Sam, with items each of you added" width="600" height="1334" fetchpriority="high"/>
+            <img src="/assets/img/screens/onelist-store.webp" alt="OneList showing that Sam is shopping now" width="600" height="1334"/>
+          </div></div>
+        </div>
+        <div class="ph ph-right">
+          <div class="device" style="--fd:-4.5s"><div class="screen">
+            <img class="on" src="/assets/img/screens/onelist-widget.webp" alt="OneList Groceries widget on an Android home screen" width="600" height="1334"/>
+          </div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PRINCIPLES TICKER -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Free forever</span><span>No ads</span><span>Works offline</span><span>8 languages</span><span>No paywall at item 21</span><span>Your data isn't the product</span><span>Made in Delhi</span>
+        <span>Free forever</span><span>No ads</span><span>Works offline</span><span>8 languages</span><span>No paywall at item 21</span><span>Your data isn't the product</span><span>Made in Delhi</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Technook · technook.in</span>
-      <span>Made in Delhi</span>
+
+    <!-- APPS -->
+    <section class="sec" id="apps">
+      <div class="wrap">
+        <p class="label">Our apps</p>
+        <h2 class="sec-title">Three apps, done properly</h2>
+        <p class="lead">We'd rather build a few things people use every day than ten things nobody finishes setting up.</p>
+
+        <div class="panels">
+
+          <article class="panel reveal" style="--app:#9455F0">
+            <div class="panel-copy">
+              <div class="panel-id">
+                <img src="/assets/img/smartwishlist.png" alt="" width="56" height="56"/>
+                <div><h3>OneList</h3><p>Shared shopping lists, live on both phones</p></div>
+              </div>
+              <p>One shopping list that lives on two phones. Add an item and your partner sees it in seconds — with quick-add built for Indian kitchens, a home-screen widget and five colour themes.</p>
+              <ul class="chips"><li>Live sync</li><li>Shared lists</li><li>Home widget</li><li>Offline-tolerant</li><li>8 languages</li></ul>
+              <div class="panel-foot">
+                <span class="pill live">Live on Google Play</span>
+                <a class="more" href="/onelist/">Learn more <svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+              </div>
+            </div>
+            <div class="panel-art">
+              <figure class="par">
+                <div class="device"><div class="screen" data-cycle>
+                  <img class="on" src="/assets/img/screens/onelist-list.webp" alt="OneList Groceries list shared by you and Sam" width="600" height="1334" loading="lazy" data-cap="Shared list, live on both phones"/>
+                  <img src="/assets/img/screens/onelist-store.webp" alt="OneList showing that Sam is shopping now" width="600" height="1334" loading="lazy" data-cap="See when your partner is shopping"/>
+                  <img src="/assets/img/screens/onelist-widget.webp" alt="OneList widget on an Android home screen" width="600" height="1334" loading="lazy" data-cap="Right on your home screen"/>
+                </div></div>
+                <figcaption class="cap">Shared list, live on both phones</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="panel reveal" style="--app:#E0748A">
+            <div class="panel-copy">
+              <div class="panel-id">
+                <img src="/assets/img/ova-icon.png" alt="" width="56" height="56"/>
+                <div><h3>Ova</h3><p>Cycle tracking, and who else gets to see it</p></div>
+              </div>
+              <p>A period and cycle tracker built around the question other trackers skip: who else gets to see this? Share cycle dates with your mother and everything with your partner — category by category, revocable in one tap.</p>
+              <ul class="chips"><li>Per-person sharing</li><li>Four tracking modes</li><li>Health Connect</li><li>No ads or analytics</li></ul>
+              <div class="panel-foot">
+                <span class="pill">Coming to Google Play</span>
+                <a class="more" href="/ova/">Learn more <svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+              </div>
+            </div>
+            <div class="panel-art">
+              <figure class="par">
+                <div class="device"><div class="screen" data-cycle>
+                  <img class="on" src="/assets/img/screens/ova-home.webp" alt="Ova home screen with the cycle dial" width="600" height="1334" loading="lazy" data-cap="Where you are in your cycle"/>
+                  <img src="/assets/img/screens/ova-invite-who.webp" alt="Ova invite step one: who is this for" width="600" height="1334" loading="lazy" data-cap="Choose who you share with"/>
+                  <img src="/assets/img/screens/ova-invite-what.webp" alt="Ova invite step two: separate switches for cycle dates, symptoms, intimacy and mood" width="600" height="1334" loading="lazy" data-cap="Choose what each person sees"/>
+                </div></div>
+                <figcaption class="cap">Where you are in your cycle</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="panel reveal" style="--app:#2FB5C4">
+            <div class="panel-copy">
+              <div class="panel-id">
+                <span class="tile"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#shield"/></svg></span>
+                <div><h3>FamilyGuard</h3><p>Family safety &amp; check-in</p></div>
+              </div>
+              <p>Stay in touch with an elderly parent's phone — location, SOS alerts, fall detection and battery warnings, with consent and a visible notification on both sides.</p>
+              <ul class="chips"><li>Live location</li><li>SOS &amp; fall detection</li><li>Battery alerts</li><li>Push notifications</li></ul>
+              <div class="panel-foot">
+                <span class="pill">In development</span>
+                <a class="more" href="/familyguard/">Learn more <svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+              </div>
+            </div>
+            <div class="panel-art">
+              <figure class="par">
+                <div class="device"><div class="screen" data-cycle>
+                  <img class="on" src="/assets/img/screens/familyguard-home.webp" alt="FamilyGuard design: guardian home showing protection active" width="600" height="1360" loading="lazy" data-cap="Design preview · Guardian home"/>
+                  <img src="/assets/img/screens/familyguard-modes.webp" alt="FamilyGuard design: choose parent or own phone setup" width="600" height="1360" loading="lazy" data-cap="Design preview · Two modes"/>
+                </div></div>
+                <figcaption class="cap">Design preview · Guardian home</figcaption>
+              </figure>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE BUILD -->
+    <section class="sec tight" id="how">
+      <div class="wrap">
+        <p class="label">How we build</p>
+        <h2 class="sec-title">What we won't do</h2>
+        <p class="lead">Most of what makes an app annoying is a business decision, not a technical one. These are ours.</p>
+
+        <div class="cards reveal">
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#ban"/></svg></span><h3>No ads. Ever.</h3><p>Not a banner between your groceries, not a full-screen one when you open the app. There is nothing to dismiss.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#lock"/></svg></span><h3>No paywall at item 21</h3><p>No trial that expires, no "upgrade to add more". If a feature exists, it works from the first minute.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#shield"/></svg></span><h3>Your data isn't the product</h3><p>We don't share your data with third parties. Your lists are yours; we have no reason to look at them.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#signal"/></svg></span><h3>Built for patchy signal</h3><p>Basement aisle with no bars? Add items anyway. Everything queues up and syncs the moment you're back online.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#globe"/></svg></span><h3>Made for Indian homes</h3><p>Atta, dal, rice and sugar are one tap, not a search. Available in Hindi and seven other languages.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#phone"/></svg></span><h3>Tested on real phones</h3><p>On the mid-range Android handsets people actually own, with real family data — not just a clean emulator.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec tight" id="contact">
+      <div class="wrap">
+        <div class="cta-card reveal">
+          <p class="label">Get in touch</p>
+          <h2 class="sec-title">Something broken? An idea?</h2>
+          <p>Bug reports, feature requests and collaborations all reach the same inbox — and get read by the person who wrote the code.</p>
+          <div class="cta-row">
+            <a href="mailto:echoanup@gmail.com" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#mail"/></svg>Email Technook</a>
+            <a href="/onelist/support/" class="btn btn-ghost"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#help"/></svg>Support &amp; FAQ</a>
+          </div>
+          <p class="mail-line">echoanup@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <a href="/" class="brand">
+          <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+          Technook
+        </a>
+        <p>Everyday apps, done properly.<br/>An independent studio in Delhi, India.</p>
+        <a class="foot-mail" href="mailto:echoanup@gmail.com">echoanup@gmail.com</a>
+      </div>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">Apps</h2><a href="/onelist/">OneList</a><a href="/ova/">Ova</a><a href="/familyguard/">FamilyGuard</a></div>
+        <div><h2 class="foot-h">Help</h2><a href="/onelist/support/">Support</a><a href="/onelist/privacy/">Privacy</a><a href="#contact">Contact</a></div>
+      </div>
     </div>
+    <div class="wrap foot-bottom"><span>© 2026 Technook · technook.in</span><span>Made in Delhi</span></div>
+    <div class="wrap"><p class="giant" aria-hidden="true">Technook</p></div>
   </footer>
 
   <script src="/assets/js/main.js" defer></script>

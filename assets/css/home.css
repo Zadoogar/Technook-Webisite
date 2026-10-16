@@ -51,24 +51,6 @@
 .ph-left .device, .ph-right .device { filter: brightness(.82); }
 @media (max-width: 520px) { .ph-left { --x: calc(var(--w) * -.5); } .ph-right { --x: calc(var(--w) * .5); } }
 
-/* ── DEVICE + SCREENSHOT SLIDESHOW ────────────────────────────────────────── */
-.device {
-  position: relative; aspect-ratio: 9 / 20; max-width: 100%;
-  padding: clamp(6px, .7vw, 8px); border-radius: clamp(26px, 3vw, 36px);
-  background: linear-gradient(160deg, #2A2633, #0D0C12 40%);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.14), 0 50px 90px -30px rgba(0,0,0,.9), 0 30px 80px -40px var(--glow);
-  animation: float 7s ease-in-out infinite alternate; animation-delay: var(--fd, 0s);
-}
-.screen { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: clamp(20px, 2.4vw, 28px); background: #000; }
-/* Punch-hole camera, over the status bar the captures already have. */
-.screen::after { content: ''; position: absolute; top: 2.2%; left: 50%; width: 4.5%; aspect-ratio: 1; translate: -50% 0; border-radius: 50%; background: #000; box-shadow: 0 0 0 1.5px rgba(255,255,255,.06); }
-.screen img {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; object-position: top;
-  opacity: 0; transition: opacity .9s ease;
-}
-.screen img.on { opacity: 1; }
-
 /* ── MARQUEE ──────────────────────────────────────────────────────────────── */
 .marquee {
   overflow: hidden; padding-block: 20px;
@@ -119,11 +101,6 @@
 .panel-art { position: relative; display: grid; place-items: center; padding: 40px 24px 28px; border-left: 1px solid var(--line); }
 .panel-art figure { width: clamp(200px, 22vw, 260px); display: flex; flex-direction: column; align-items: center; gap: 18px; }
 .panel-art .device { width: 100%; }
-.cap {
-  min-height: 1.6em; text-align: center;
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim);
-}
-.cap .flag { color: var(--amber); }
 @media (max-width: 860px) {
   .panel { grid-template-columns: minmax(0, 1fr); }
   .panel-art { border-left: 0; border-top: 1px solid var(--line); }
@@ -137,3 +114,7 @@
   background: linear-gradient(180deg, rgba(196,162,250,.32), rgba(196,162,250,0) 88%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
+
+/* Live pills double as Play Store links. */
+a.pill { transition: color .2s; }
+a.pill:hover { color: var(--tx); }

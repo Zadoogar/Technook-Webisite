@@ -1,0 +1,19 @@
+# Technook
+
+> Technook is an independent studio in Delhi, India that makes small Android apps for everyday life. Every app is free, with no ads, no subscriptions and no in-app purchases.
+
+## Apps on Google Play
+
+- [OneList: Shared Shopping List](https://technook.in/onelist/): A shared shopping list for couples and families. Changes sync live to everyone's phone, each item shows who added it, items sort into aisles, and store mode shows when someone is already shopping. Also wishlists with price-drop alerts and gift lists where family can quietly claim presents. Invite with a 6-letter code; usable without an account. Android only. English, Hindi, German, Spanish, French, Portuguese, Indonesian and Arabic. [Google Play](https://play.google.com/store/apps/details?id=wishlist.technook.in)
+- [Ova: Cycle Tracker & Sharing](https://technook.in/ova/): A period and cycle tracker where you choose, person by person and category by category (cycle dates, symptoms, intimacy, mood), what each person sees, and can pause or end any share instantly. Predictions are never shared. No ads, no analytics, no third-party trackers. Four modes: trying to conceive, cycle awareness, pregnancy, postpartum. Health Connect basal temperature. Not contraception. Android only. [Google Play](https://play.google.com/store/apps/details?id=com.technook.ova)
+- [Dawnpath: Debt Payoff Tracker](https://technook.in/dawnpath/): Tracks loans (home, car, personal, education, gold), EMIs, credit cards, credit lines, pay-later plans, informal IOUs and money lent to friends in 150+ currencies, and shows a projected debt-free date. Snowball and avalanche scenarios for extra payments. Manual entry only: it never reads SMS and never connects to a bank. Android only. [Google Play](https://play.google.com/store/apps/details?id=com.technook.dawnpath)
+
+## Comparison guides
+
+- [Best shared shopping list apps for Android (2026)](https://technook.in/guides/best-shared-shopping-list-apps/): OneList, Listonic, Bring!, AnyList, OurGroceries, Google Keep and Out of Milk compared.
+- [Period tracker apps that share with your partner (2026)](https://technook.in/guides/period-tracker-apps-with-partner-sharing/): Flo, Clue, Stardust, Maya, Period Calendar, Euki, drip and Ova compared on sharing and privacy.
+- [Best debt payoff tracker apps (2026)](https://technook.in/guides/best-debt-payoff-tracker-apps/): Dawnpath, Debt Payoff Planner, Undebt.it, YNAB, Monarch Money and IOU trackers compared.
+
+## Contact
+
+- Email: echoanup@gmail.com

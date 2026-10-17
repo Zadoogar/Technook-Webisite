@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technook — काम के Android ऐप। न विज्ञापन, न सब्सक्रिप्शन।</title>
+  <meta name="description" content="Technook रोज़मर्रा की ज़िंदगी के लिए छोटे Android ऐप बनाता है: OneList, एक साझा शॉपिंग लिस्ट; Ova, हर व्यक्ति के लिए अलग शेयरिंग वाला साइकिल ट्रैकर; और Dawnpath, कर्ज़ चुकाने का ट्रैकर। मुफ़्त, कोई विज्ञापन नहीं, दिल्ली, भारत में बने।"/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="canonical" href="https://technook.in/hi/"/>
+  <link rel="alternate" hreflang="en" href="https://technook.in/"/>
+  <link rel="alternate" hreflang="hi" href="https://technook.in/hi/"/>
+  <link rel="alternate" hreflang="es" href="https://technook.in/es/"/>
+  <link rel="alternate" hreflang="pt-BR" href="https://technook.in/pt/"/>
+  <link rel="alternate" hreflang="ar" href="https://technook.in/ar/"/>
+  <link rel="alternate" hreflang="fr" href="https://technook.in/fr/"/>
+  <link rel="alternate" hreflang="de" href="https://technook.in/de/"/>
+  <link rel="alternate" hreflang="x-default" href="https://technook.in/"/>
+
+  <meta property="og:title" content="Technook — काम के Android ऐप"/>
+  <meta property="og:description" content="रोज़मर्रा की ज़िंदगी के लिए छोटे Android ऐप। मुफ़्त, ऑफ़लाइन भी चलते हैं, कोई विज्ञापन नहीं।"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://technook.in/hi/"/>
+  <meta property="og:image" content="https://technook.in/assets/img/technook-icon-512.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Technook",
+    "url": "https://technook.in/",
+    "logo": "https://technook.in/assets/img/technook-icon-512.png",
+    "email": "echoanup@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" },
+    "sameAs": ["https://play.google.com/store/apps/dev?id=6005415161597805174"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+Devanagari:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <link rel="stylesheet" href="/assets/css/home.css"/>
+</head>
+<body>
+  <a class="skip" href="#main">सीधे कंटेंट पर जाएँ</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="मुख्य">
+    <a href="/hi/"" class="brand" aria-label="Technook होम पेज">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tg)"/>
+        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+      Technook
+    </a>
+    <ul class="nav-links">
+      <li><a href="#apps">ऐप</a></li>
+      <li><a href="/hi/guides/"">गाइड</a></li>
+      <li><a href="#how">हम कैसे बनाते हैं</a></li>
+      <li><a href="#contact">संपर्क</a></li>
+    </ul>
+    <!--lang--><details class="lang"><summary aria-label="भाषा: हिन्दी"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#globe"/></svg>HI</summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/hi/" hreflang="hi" lang="hi" aria-current="true">हिन्दी</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li></ul></details><!--/lang-->
+    <a class="btn btn-ghost btn-sm" href="#contact">हमें लिखें</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <header class="wrap hero">
+      <div>
+        <p class="eyebrow fu">Android ऐप · दिल्ली, भारत</p>
+        <h1>
+          <span class="ln"><span>काम के ऐप।</span></span>
+          <span class="ln"><span style="--d:.12s"><span class="g">न विज्ञापन, न सब्सक्रिप्शन।</span></span></span>
+        </h1>
+        <p class="hero-sub fu" style="--d:.25s">Technook रोज़मर्रा की ज़िंदगी के लिए छोटे Android ऐप बनाता है — एक शॉपिंग लिस्ट जिसे आप अपने पार्टनर के साथ शेयर करते हैं, एक साइकिल ट्रैकर जिसमें आप तय करते हैं कि कौन क्या देखे, और एक कर्ज़ ट्रैकर जो दिखाता है कि आप किस दिन कर्ज़-मुक्त होंगे।</p>
+        <div class="cta-row fu" style="--d:.35s">
+          <a href="#apps" class="btn btn-primary">हमारे ऐप देखें <svg class="ic arr" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+          <a href="#how" class="btn btn-ghost">हम कैसे बनाते हैं</a>
+        </div>
+        <dl class="facts fu" style="--d:.45s">
+          <div><dt>3</dt><dd>Google Play पर ऐप</dd></div>
+          <div><dt>8</dt><dd>भाषाओं में उपलब्ध</dd></div>
+          <div><dt>0</dt><dd>विज्ञापन या पेवॉल</dd></div>
+          <div><dt>दिल्ली</dt><dd>यहीं बनाते हैं</dd></div>
+        </dl>
+      </div>
+
+      <div class="fan">
+        <div class="ph ph-left">
+          <div class="device" style="--fd:-2s"><div class="screen">
+            <img class="on" src="/assets/img/screens/ova-home.webp" alt="Ova की होम स्क्रीन: साइकिल डायल पर 27 दिन की साइकिल का छठा दिन" width="600" height="1334"/>
+          </div></div>
+        </div>
+        <div class="ph ph-main">
+          <div class="device"><div class="screen" data-cycle>
+            <img class="on" src="/assets/img/screens/onelist-list.webp" alt="OneList में आपकी और सैम की साझा राशन लिस्ट, सेक्शन में बँटी हुई, हर आइटम पर नाम कि उसे किसने जोड़ा" width="600" height="1334" fetchpriority="high"/>
+            <img src="/assets/img/screens/onelist-store.webp" alt="OneList दिखा रहा है कि सैम अभी खरीदारी कर रहे हैं" width="600" height="1334"/>
+          </div></div>
+        </div>
+        <div class="ph ph-right">
+          <div class="device" style="--fd:-4.5s"><div class="screen">
+            <img class="on" src="/assets/img/screens/dawnpath-home.webp" alt="Dawnpath की सफर स्क्रीन: सितंबर 2033 तक कर्ज़-मुक्त, 23% रास्ता तय" width="600" height="1334"/>
+          </div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PRINCIPLES TICKER -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>हमेशा मुफ़्त</span><span>कोई विज्ञापन नहीं</span><span>ऑफ़लाइन भी चलता है</span><span>8 भाषाएँ</span><span>21वें आइटम पर कोई पेवॉल नहीं</span><span>आपका डेटा हमारा प्रोडक्ट नहीं</span><span>दिल्ली में बना</span>
+        <span>हमेशा मुफ़्त</span><span>कोई विज्ञापन नहीं</span><span>ऑफ़लाइन भी चलता है</span><span>8 भाषाएँ</span><span>21वें आइटम पर कोई पेवॉल नहीं</span><span>आपका डेटा हमारा प्रोडक्ट नहीं</span><span>दिल्ली में बना</span>
+      </div>
+    </div>
+
+    <!-- APPS -->
+    <section class="sec" id="apps">
+      <div class="wrap">
+        <p class="label">हमारे ऐप</p>
+        <h2 class="sec-title">तीन ऐप, ढंग से बने</h2>
+        <p class="lead">दस ऐसी चीज़ें बनाने के बजाय, जिनका सेट-अप भी कोई पूरा नहीं करता, हम कुछ ऐसी चीज़ें बनाना पसंद करते हैं जिन्हें लोग हर दिन इस्तेमाल करें।</p>
+
+        <div class="panels">
+
+          <article class="panel reveal" style="--app:#9455F0">
+            <div class="panel-copy">
+              <div class="panel-id">
+                <img src="/assets/img/onelist-icon.png" alt="" width="56" height="56"/>
+                <div><h3>OneList</h3><p>साझा शॉपिंग लिस्ट, दोनों फ़ोन पर लाइव</p></div>
+              </div>
+              <p>एक शॉपिंग लिस्ट जो दो फ़ोन पर रहती है। आपने दूध जोड़ा, तो आपके पार्टनर को दूध दिख गया; दुकान पर टिक किया, तो घर पर भी टिक हो गया। आइटम अपने-आप सेक्शन में बँट जाते हैं, रोज़ की चीज़ें बस एक टैप दूर रहती हैं, और गिफ़्ट लिस्ट से जन्मदिन के तोहफ़े सरप्राइज़ बने रहते हैं।</p>
+              <ul class="chips"><li>लाइव सिंक</li><li>सेक्शन के हिसाब से छँटाई</li><li>स्टोर मोड</li><li>गिफ़्ट लिस्ट</li><li>होम विजेट</li><li>8 भाषाएँ</li></ul>
+              <div class="panel-foot">
+                <a class="pill live" href="https://play.google.com/store/apps/details?id=wishlist.technook.in">Google Play पर पाएँ</a>
+                <a class="more" href="/hi/onelist/"">और जानें <svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+              </div>
+            </div>
+            <div class="panel-art">
+              <figure class="par">
+                <div class="device"><div class="screen" data-cycle>
+                  <img class="on" src="/assets/img/screens/onelist-list.webp" alt="OneList में आपकी और सैम की साझा राशन लिस्ट" width="600" height="1334" loading="lazy" data-cap="साझा लिस्ट, दोनों फ़ोन पर लाइव"/>
+                  <img src="/assets/img/screens/onelist-store.webp" alt="OneList दिखा रहा है कि सैम अभी खरीदारी कर रहे हैं" width="600" height="1334" loading="lazy" data-cap="देखें कि आपका पार्टनर कब शॉपिंग कर रहा है"/>
+                  <img src="/assets/img/screens/onelist-gifts.webp" alt="माया के जन्मदिन की OneList गिफ़्ट लिस्ट, जिसमें परिवार वालों ने तोहफ़े क्लेम किए हैं" width="600" height="1334" loading="lazy" data-cap="गिफ़्ट लिस्ट, ताकि कोई एक ही तोहफ़ा दो बार न ले"/>
+                  <img src="/assets/img/screens/onelist-widget.webp" alt="Android होम स्क्रीन पर OneList विजेट" width="600" height="1334" loading="lazy" data-cap="सीधे आपकी होम स्क्रीन पर"/>
+                </div></div>
+                <figcaption class="cap">साझा लिस्ट, दोनों फ़ोन पर लाइव</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="panel reveal" style="--app:#E0748A">
+            <div class="panel-copy">
+              <div class="panel-id">
+                <img src="/assets/img/ova-icon.png" alt="" width="56" height="56"/>
+                <div><h3>Ova</h3><p>साइकिल ट्रैकिंग, और इसे और कौन देखे</p></div>
+              </div>
+              <p>एक पीरियड और साइकिल ट्रैकर, जो उस सवाल पर बना है जिसे बाकी ट्रैकर छोड़ देते हैं: यह और कौन देख सकता है? अपनी माँ के साथ साइकिल की तारीख़ें शेयर करें और पार्टनर के साथ सब कुछ — हर कैटेगरी अलग से, और एक टैप में वापस।</p>
+              <ul class="chips"><li>हर व्यक्ति के लिए अलग शेयरिंग</li><li>चार ट्रैकिंग मोड</li><li>Health Connect</li><li>न विज्ञापन, न एनालिटिक्स</li></ul>
+              <div class="panel-foot">
+                <a class="pill live" href="https://play.google.com/store/apps/details?id=com.technook.ova">Google Play पर पाएँ</a>
+                <a class="more" href="/hi/ova/"">और जानें <svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+              </div>
+            </div>
+            <div class="panel-art">
+              <figure class="par">
+                <div class="device"><div class="screen" data-cycle>
+                  <img class="on" src="/assets/img/screens/ova-home.webp" alt="साइकिल डायल के साथ Ova की होम स्क्रीन" width="600" height="1334" loading="lazy" data-cap="आप अपनी साइकिल में कहाँ हैं"/>
+                  <img src="/assets/img/screens/ova-invite-who.webp" alt="Ova इनवाइट का पहला स्टेप: यह किसके लिए है" width="600" height="1334" loading="lazy" data-cap="चुनें कि किसके साथ शेयर करना है"/>
+                  <img src="/assets/img/screens/ova-invite-what.webp" alt="Ova इनवाइट का दूसरा स्टेप: साइकिल की तारीख़ों, लक्षणों, अंतरंगता और मूड के लिए अलग-अलग स्विच" width="600" height="1334" loading="lazy" data-cap="चुनें कि हर व्यक्ति क्या देखे"/>
+                </div></div>
+                <figcaption class="cap">आप अपनी साइकिल में कहाँ हैं</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="panel reveal" style="--app:#6366F1">
+            <div class="panel-copy">
+              <div class="panel-id">
+                <img src="/assets/img/dawnpath-icon.png" alt="" width="56" height="56"/>
+                <div><h3>Dawnpath</h3><p>कर्ज़ चुकाने का ट्रैकर, और वह दिन जब सब चुक जाएगा</p></div>
+              </div>
+              <p>हर लोन, EMI, क्रेडिट कार्ड और IOU एक शांत जगह पर, साथ में कर्ज़-मुक्ति की अनुमानित तारीख़, जो आपके भुगतान बदलने पर बदल जाती है। आंकड़े आप खुद डालते हैं — यह कभी आपके SMS नहीं पढ़ता और कभी आपके बैंक से नहीं जुड़ता।</p>
+              <ul class="chips"><li>कर्ज़-मुक्ति की तारीख़</li><li>क्रेडिट लाइन</li><li>आपका दिया उधार</li><li>150+ करेंसी</li><li>SMS नहीं पढ़ता</li><li>8 भाषाएँ</li></ul>
+              <div class="panel-foot">
+                <a class="pill live" href="https://play.google.com/store/apps/details?id=com.technook.dawnpath">Google Play पर पाएँ</a>
+                <a class="more" href="/hi/dawnpath/"">और जानें <svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#arr"/></svg></a>
+              </div>
+            </div>
+            <div class="panel-art">
+              <figure class="par">
+                <div class="device"><div class="screen" data-cycle>
+                  <img class="on" src="/assets/img/screens/dawnpath-home.webp" alt="Dawnpath सफर: सितंबर 2033 तक कर्ज़-मुक्त" width="600" height="1334" loading="lazy" data-cap="आपकी कर्ज़-मुक्ति का दिन"/>
+                  <img src="/assets/img/screens/dawnpath-debts.webp" alt="Dawnpath में कर्ज़ों की लिस्ट: पे लेटर, कार, गोल्ड, होम और पर्सनल लोन, प्रोग्रेस के साथ" width="600" height="1334" loading="lazy" data-cap="हर कर्ज़, एक लिस्ट में"/>
+                  <img src="/assets/img/screens/dawnpath-credit.webp" alt="Dawnpath क्रेडिट लाइन: बकाया रकम और बारह महीने के उधार का चार्ट" width="600" height="1334" loading="lazy" data-cap="क्रेडिट लाइन, ईमानदार चार्ट के साथ"/>
+                </div></div>
+                <figcaption class="cap">आपकी कर्ज़-मुक्ति का दिन</figcaption>
+              </figure>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDES -->
+    <section class="sec tight" id="guides">
+      <div class="wrap">
+        <p class="label">गाइड</p>
+        <h2 class="sec-title">ऐप चुन रहे हैं? पहले तुलना करें।</h2>
+        <p class="lead">हर कैटेगरी के ऐप्स की ईमानदार तुलना, हमारे ऐप समेत — क्या मुफ़्त है, किसके लिए पैसे देने पड़ते हैं, और कौन-सा किसके लिए सही है।</p>
+        <div class="cards reveal">
+          <a class="card" href="/hi/guides/best-shared-shopping-list-apps/""><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#list"/></svg></span><h3>Android के लिए सबसे अच्छे साझा शॉपिंग लिस्ट ऐप</h3><p>OneList, Listonic, Bring!, AnyList, OurGroceries और Google Keep की तुलना, परिवारों और कपल्स के लिए।</p></a>
+          <a class="card" href="/hi/guides/period-tracker-apps-with-partner-sharing/""><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#users"/></svg></span><h3>पार्टनर के साथ शेयर करने वाले पीरियड ट्रैकर ऐप</h3><p>कौन-से ट्रैकर आपकी साइकिल शेयर करने देते हैं, वह शेयरिंग कितनी बारीकी से तय होती है, और हर ऐप आपके डेटा के साथ क्या करता है।</p></a>
+          <a class="card" href="/hi/guides/best-debt-payoff-tracker-apps/""><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#chart"/></svg></span><h3>कर्ज़ चुकाने के सबसे अच्छे ट्रैकर ऐप</h3><p>ऐसे ऐप जो लोन, EMI और क्रेडिट कार्ड ट्रैक करते हैं और दिखाते हैं कि आप कब कर्ज़-मुक्त होंगे — बैंक लिंक के साथ भी और बिना भी।</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE BUILD -->
+    <section class="sec tight" id="how">
+      <div class="wrap">
+        <p class="label">हम कैसे बनाते हैं</p>
+        <h2 class="sec-title">हम क्या नहीं करेंगे</h2>
+        <p class="lead">किसी ऐप में जो बातें सबसे ज़्यादा खीझ दिलाती हैं, वे ज़्यादातर बिज़नेस के फ़ैसले होते हैं, तकनीकी नहीं। ये रहे हमारे फ़ैसले।</p>
+
+        <div class="cards reveal">
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#ban"/></svg></span><h3>विज्ञापन नहीं। कभी नहीं।</h3><p>न आपके राशन के बीच कोई बैनर, न ऐप खोलते ही पूरी स्क्रीन वाला विज्ञापन। हटाने के लिए कुछ है ही नहीं।</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#lock"/></svg></span><h3>21वें आइटम पर कोई पेवॉल नहीं</h3><p>न कोई ट्रायल जो ख़त्म हो जाए, न “और जोड़ने के लिए अपग्रेड करें”। अगर कोई फ़ीचर है, तो वह पहले मिनट से काम करता है।</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#shield"/></svg></span><h3>आपका डेटा हमारा प्रोडक्ट नहीं</h3><p>हम आपका डेटा किसी थर्ड पार्टी के साथ शेयर नहीं करते। आपकी लिस्ट आपकी हैं; हमारे पास उन्हें देखने की कोई वजह नहीं।</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#signal"/></svg></span><h3>कमज़ोर सिग्नल के लिए बना</h3><p>बेसमेंट वाले सेक्शन में नेटवर्क नहीं? फिर भी आइटम जोड़ें। सब कुछ कतार में रहता है और नेट आते ही सिंक हो जाता है।</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#globe"/></svg></span><h3>भारतीय घरों के लिए बना</h3><p>Dawnpath में EMI, गोल्ड लोन और पे लेटर प्लान को पूरी अहमियत मिलती है, और OneList और Dawnpath दोनों हिंदी और सात दूसरी भाषाएँ बोलते हैं।</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#phone"/></svg></span><h3>असली फ़ोन पर टेस्ट किए गए</h3><p>उन मिड-रेंज Android फ़ोन पर जो लोगों के पास सच में होते हैं, असली पारिवारिक डेटा के साथ — सिर्फ़ किसी साफ़-सुथरे एमुलेटर पर नहीं।</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec tight" id="contact">
+      <div class="wrap">
+        <div class="cta-card reveal">
+          <p class="label">संपर्क करें</p>
+          <h2 class="sec-title">कुछ टूटा है? कोई आइडिया?</h2>
+          <p>बग रिपोर्ट, फ़ीचर की माँग और साथ काम करने के प्रस्ताव, सब एक ही इनबॉक्स में आते हैं — और उन्हें वही पढ़ता है जिसने कोड लिखा है।</p>
+          <div class="cta-row">
+            <a href="mailto:echoanup@gmail.com" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#mail"/></svg>Technook को ईमेल करें</a>
+            <a href="/onelist/support/" class="btn btn-ghost"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#help"/></svg>सपोर्ट और आम सवाल</a>
+          </div>
+          <p class="mail-line">echoanup@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <a href="/hi/"" class="brand">
+          <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+          Technook
+        </a>
+        <p>रोज़ के ऐप, ढंग से बने।<br/>दिल्ली, भारत का एक इंडिपेंडेंट स्टूडियो।</p>
+        <a class="foot-mail" href="mailto:echoanup@gmail.com">echoanup@gmail.com</a>
+      </div>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">ऐप</h2><a href="/hi/onelist/"">OneList</a><a href="/hi/ova/"">Ova</a><a href="/hi/dawnpath/"">Dawnpath</a></div>
+        <div><h2 class="foot-h">गाइड</h2><a href="/hi/guides/best-shared-shopping-list-apps/"">साझा शॉपिंग लिस्ट ऐप</a><a href="/hi/guides/period-tracker-apps-with-partner-sharing/"">शेयरिंग वाले पीरियड ट्रैकर</a><a href="/hi/guides/best-debt-payoff-tracker-apps/"">कर्ज़ चुकाने के ट्रैकर</a></div>
+        <div><h2 class="foot-h">मदद</h2><a href="/onelist/support/">सपोर्ट</a><a href="/onelist/privacy/">प्राइवेसी</a><a href="#contact">संपर्क</a></div>
+      </div>
+    </div>
+    <div class="wrap foot-bottom"><span>© 2026 Technook · technook.in</span><span>दिल्ली में बना</span></div>
+    <div class="wrap"><p class="giant" aria-hidden="true">Technook</p></div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

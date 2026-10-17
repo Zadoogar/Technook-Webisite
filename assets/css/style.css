@@ -93,7 +93,7 @@ h1, h2, h3, h4 {
 }
 
 .skip {
-  position: absolute; left: 12px; top: -60px; z-index: 200;
+  position: absolute; inset-inline-start: 12px; top: -60px; z-index: 200;
   padding: 10px 16px; border-radius: 10px;
   background: var(--tx); color: var(--bg); font-weight: 700;
   transition: top .2s;
@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
 .brand svg { width: 28px; height: 28px; flex: none; transition: transform .45s var(--spring); }
 .brand:hover svg { transform: rotate(-8deg) scale(1.08); }
 
-.nav-links { display: flex; gap: 2px; margin-left: auto; list-style: none; }
+.nav-links { display: flex; gap: 2px; margin-inline-start: auto; list-style: none; }
 .nav-links a {
   display: block; padding: 8px 12px; border-radius: 8px;
   color: var(--mu); font-size: 14px; font-weight: 600;
@@ -154,7 +154,8 @@ h1, h2, h3, h4 {
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--tx); background: rgba(255,255,255,.05); }
 @media (max-width: 760px) {
   .nav-links { display: none; }
-  .nav > .btn { margin-left: auto; }
+  .nav > .btn, .nav > .lang { margin-inline-start: auto; }
+  .nav > .lang + .btn { margin-inline-start: 0; }
 }
 
 /* Reading progress on long pages: scroll-driven, no JS. Hidden where unsupported. */
@@ -343,7 +344,7 @@ h1, h2, h3, h4 {
   margin-top: 56px;
 }
 .steps::before {
-  content: ''; position: absolute; top: 27px; left: 28px; right: 12%; height: 2px;
+  content: ''; position: absolute; top: 27px; inset-inline: 28px 12%; height: 2px;
   background: linear-gradient(90deg, var(--accent), var(--accent-tx));
   transform-origin: 0 50%;
 }
@@ -391,19 +392,19 @@ h1, h2, h3, h4 {
 .doc-layout.has-toc { grid-template-columns: 220px minmax(0, 1fr); max-width: 1180px; }
 .toc { display: none; }
 .has-toc .toc { display: block; position: sticky; top: calc(var(--nav-h) + 32px); align-self: start; }
-.toc ol { list-style: none; margin-top: 16px; border-left: 1px solid var(--line); }
+.toc ol { list-style: none; margin-top: 16px; border-inline-start: 1px solid var(--line); }
 .toc a {
-  display: block; padding: 7px 0 7px 16px; margin-left: -1px;
-  border-left: 2px solid transparent;
+  display: block; padding-block: 7px; padding-inline: 16px 0; margin-inline-start: -1px;
+  border-inline-start: 2px solid transparent;
   color: var(--dim); font-size: 13.5px; line-height: 1.4;
   transition: color .25s, border-color .25s;
 }
 .toc a:hover { color: var(--tx); }
-.toc a.on { color: var(--tx); border-left-color: var(--accent); }
+.toc a.on { color: var(--tx); border-inline-start-color: var(--accent); }
 @media (max-width: 960px) {
   .doc-layout.has-toc { grid-template-columns: minmax(0, 1fr); }
   .has-toc .toc { position: static; }
-  .toc ol { display: flex; gap: 8px; overflow-x: auto; border-left: 0; padding-bottom: 6px; scrollbar-width: none; }
+  .toc ol { display: flex; gap: 8px; overflow-x: auto; border-inline-start: 0; padding-bottom: 6px; scrollbar-width: none; }
   .toc a { white-space: nowrap; margin: 0; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; }
   .toc a.on { border-color: var(--accent); }
 }
@@ -419,7 +420,7 @@ h1, h2, h3, h4 {
   overflow-wrap: anywhere; transition: text-decoration-color .2s;
 }
 .doc a:not(.btn):not(.quick-link):hover { text-decoration-color: currentColor; }
-.doc ul:not([class]), .doc ol:not([class]) { margin-bottom: 14px; padding-left: 22px; color: var(--mu); }
+.doc ul:not([class]), .doc ol:not([class]) { margin-bottom: 14px; padding-inline-start: 22px; color: var(--mu); }
 .doc li { margin-bottom: 8px; font-size: 15.5px; line-height: 1.75; }
 .doc li::marker { color: var(--accent-tx); }
 .doc code { padding: 2px 6px; border-radius: 6px; background: rgba(255,255,255,.06); color: var(--tx); font-family: var(--f-mono); font-size: .88em; }
@@ -439,18 +440,18 @@ h1, h2, h3, h4 {
 
 ul.check { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
 ul.check:last-child { margin-bottom: 0; }
-ul.check li { position: relative; margin: 0; padding-left: 32px; color: var(--mu); }
+ul.check li { position: relative; margin: 0; padding-inline-start: 32px; color: var(--mu); }
 ul.check li::before {
-  content: ''; position: absolute; left: 0; top: .25em; width: 20px; height: 20px; border-radius: 6px;
+  content: ''; position: absolute; inset-inline-start: 0; top: .25em; width: 20px; height: 20px; border-radius: 6px;
   background: color-mix(in srgb, var(--mint) 14%, transparent) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233FD9C4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12.5l4.5 4.5L19 7'/></svg>") center / 12px no-repeat;
 }
 
 ol.steps-list { list-style: none; counter-reset: step; margin-bottom: 14px; }
-ol.steps-list li { position: relative; margin: 0; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--line); color: var(--mu); }
+ol.steps-list li { position: relative; margin: 0; padding-block: 14px; padding-inline: 52px 0; border-bottom: 1px solid var(--line); color: var(--mu); }
 ol.steps-list li:last-child { border-bottom: 0; }
 ol.steps-list li::before {
   counter-increment: step; content: counter(step);
-  position: absolute; left: 0; top: 11px;
+  position: absolute; inset-inline-start: 0; top: 11px;
   display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
   background: var(--surf2); border: 1px solid var(--line2);
   color: var(--tx); font-family: var(--f-display); font-size: 14px; font-weight: 700;
@@ -459,7 +460,7 @@ ol.steps-list li::before {
 .tbl-wrap { overflow-x: auto; margin: 6px 0 16px; border: 1px solid var(--line); border-radius: 14px; }
 .tbl-wrap table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 14px; }
 .doc th {
-  padding: 12px 16px; text-align: left;
+  padding: 12px 16px; text-align: start;
   font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase;
   color: var(--dim); background: rgba(255,255,255,.03); border-bottom: 1px solid var(--line);
 }
@@ -591,3 +592,48 @@ ol.steps-list li::before {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ── LANGUAGES ───────────────────────────────────────────────────────────── */
+/* Switcher in the nav: native <details>, no JS needed (main.js only closes it on outside click). */
+.lang { position: relative; }
+.lang > summary {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 10px; border-radius: 10px;
+  list-style: none; cursor: pointer; color: var(--mu); font-size: 13px; font-weight: 700; letter-spacing: .04em;
+  transition: color .2s, background-color .2s;
+}
+.lang > summary::-webkit-details-marker { display: none; }
+.lang > summary:hover, .lang[open] > summary { color: var(--tx); background: rgba(255,255,255,.05); }
+.lang > summary .ic { width: 18px; height: 18px; }
+.lang ul {
+  position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 60; min-width: 168px;
+  list-style: none; padding: 6px; border-radius: 14px; border: 1px solid var(--line2);
+  background: var(--surf2); box-shadow: 0 18px 40px rgba(0,0,0,.45);
+}
+.lang ul a { display: block; padding: 9px 12px; border-radius: 9px; color: var(--mu); font-size: 14.5px; font-weight: 600; }
+.lang ul a:hover { color: var(--tx); background: rgba(255,255,255,.06); }
+.lang ul a[aria-current] { color: var(--tx); background: color-mix(in srgb, var(--accent) 22%, transparent); }
+@media (max-width: 380px) { .lang > summary { padding: 0 6px; } .nav { gap: 12px; } }
+
+/* Hindi and Arabic: the Latin fonts have no glyphs, so each stack falls through to Noto per character.
+   Tracking off: letter-spacing breaks Arabic joining and crowds Devanagari matras. */
+:root:lang(hi) {
+  --f-display: 'Sora', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --f-body: 'Manrope', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --f-mark: 'Unbounded', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --f-mono: 'JetBrains Mono', 'Noto Sans Devanagari', ui-monospace, Menlo, Consolas, monospace;
+}
+:root:lang(ar) {
+  --f-display: 'Sora', 'Noto Sans Arabic', system-ui, sans-serif;
+  --f-body: 'Manrope', 'Noto Sans Arabic', system-ui, sans-serif;
+  --f-mark: 'Unbounded', 'Noto Sans Arabic', system-ui, sans-serif;
+  --f-mono: 'JetBrains Mono', 'Noto Sans Arabic', ui-monospace, Menlo, Consolas, monospace;
+}
+:root:lang(hi) *, :root:lang(ar) * { letter-spacing: 0 !important; }
+:root:lang(hi) :is(h1, h2, h3, h4), :root:lang(ar) :is(h1, h2, h3, h4) { line-height: 1.35; }
+
+/* Right-to-left: mirror the arrows, keep the marquee running the same way. */
+[dir="rtl"] .ic.arr, [dir="rtl"] .more .ic { scale: -1 1; }
+[dir="rtl"] .btn:hover .arr { transform: translateX(-3px); }
+[dir="rtl"] .panel:hover .more .ic { transform: translateX(-4px); }
+[dir="rtl"] .progress, [dir="rtl"] .steps::before { transform-origin: 100% 50%; }
+[dir="rtl"] .marquee { direction: ltr; }

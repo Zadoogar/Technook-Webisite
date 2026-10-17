@@ -84,7 +84,8 @@
 
     var label = document.createElement('p');
     label.className = 'label';
-    label.textContent = 'On this page';
+    var onPage = { hi: 'इस पेज पर', es: 'En esta página', pt: 'Nesta página', ar: 'في هذه الصفحة', fr: 'Sur cette page', de: 'Auf dieser Seite' };
+    label.textContent = onPage[document.documentElement.lang.slice(0, 2)] || 'On this page';
     var ol = document.createElement('ol');
     var links = heads.map(function (h) {
       var text = h.textContent.replace(/^\s*\d+\.\s*/, '').trim();
@@ -114,7 +115,16 @@
     heads.forEach(function (h) { spy.observe(h); });
   }
 
+  /* Language menu is a native <details>; close it on a click outside or Escape. */
+  function initLang() {
+    var menu = document.querySelector('details.lang');
+    if (!menu) return;
+    document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') menu.open = false; });
+  }
+
   initNav();
+  initLang();
   initSpotlight();
   initParallax();
   initCycles();

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ova &mdash; Calendário menstrual com compartilhamento por pessoa</title>
+  <meta name="description" content="O Ova é um app de controle da menstruação e do ciclo em que você escolhe, pessoa por pessoa e categoria por categoria, exatamente quem vê o quê. Sem anúncios, sem ferramentas de análise."/>
+  <meta name="theme-color" content="#0A0910"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&amp;family=Sora:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="canonical" href="https://technook.in/pt/ova/"/>
+  <link rel="alternate" hreflang="en" href="https://technook.in/ova/"/>
+  <link rel="alternate" hreflang="hi" href="https://technook.in/hi/ova/"/>
+  <link rel="alternate" hreflang="es" href="https://technook.in/es/ova/"/>
+  <link rel="alternate" hreflang="pt-BR" href="https://technook.in/pt/ova/"/>
+  <link rel="alternate" hreflang="ar" href="https://technook.in/ar/ova/"/>
+  <link rel="alternate" hreflang="fr" href="https://technook.in/fr/ova/"/>
+  <link rel="alternate" hreflang="de" href="https://technook.in/de/ova/"/>
+  <link rel="alternate" hreflang="x-default" href="https://technook.in/ova/"/>
+  <link rel="icon" href="/assets/img/technook-icon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+<body class="app-ova">
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Principal">
+    <a href="/pt/"" class="brand" aria-label="Página inicial da Technook">
+      <svg viewBox="0 0 512 512" fill="none" aria-hidden="true">
+        <defs><linearGradient id="tg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B47E8"/><stop offset="1" stop-color="#6822D4"/></linearGradient></defs>
+        <rect width="512" height="512" rx="112.6" fill="url(#tg)"/>
+        <g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+      Technook
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Recursos</a></li>
+      <li><a href="#sharing">Compartilhamento</a></li>
+      <li><a href="/ova/support/">Suporte</a></li>
+      <li><a href="/ova/privacy/">Privacidade</a></li>
+    </ul>
+    <!--lang--><details class="lang"><summary aria-label="Idioma: Português"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#globe"/></svg>PT</summary><ul><li><a href="/ova/" hreflang="en" lang="en">English</a></li><li><a href="/hi/ova/" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="/es/ova/" hreflang="es" lang="es">Español</a></li><li><a href="/pt/ova/" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português</a></li><li><a href="/ar/ova/" hreflang="ar" lang="ar">العربية</a></li><li><a href="/fr/ova/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/ova/" hreflang="de" lang="de">Deutsch</a></li></ul></details><!--/lang-->
+    <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.technook.ova">Baixar o app</a>
+  </nav>
+
+  <main id="main">
+    <header class="wrap app-hero">
+      <div class="app-icon fu"><span class="halo" aria-hidden="true"></span><img src="/assets/img/ova-icon.png" alt="Ícone do app Ova" width="112" height="112"/></div>
+      <span class="pill live fu" style="--d:.1s">Já no Google Play</span>
+      <h1 class="app-title"><span class="ln"><span>Ova</span></span></h1>
+      <p class="app-sub fu" style="--d:.25s">Um app de controle da menstruação e do ciclo criado em torno de uma pergunta que todos os outros ignoram: quem mais pode ver isso?</p>
+      <div class="cta-row fu" style="--d:.35s">
+        <a href="https://play.google.com/store/apps/details?id=com.technook.ova" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#play"/></svg>Disponível no Google Play</a>
+        <a href="#features" class="btn btn-ghost">Veja o que ele faz</a>
+      </div>
+    </header>
+
+    <div class="strip">
+      <ul class="wrap">
+        <li><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#users"/></svg>Compartilhamento por pessoa</li>
+        <li><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#layers"/></svg>Quatro modos de acompanhamento</li>
+        <li><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#pulse"/></svg>Health Connect</li>
+        <li><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#ban"/></svg>Sem anúncios</li>
+        <li><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#eye-off"/></svg>Sem ferramentas de análise</li>
+        <li><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#trash"/></svg>Exclua tudo quando quiser</li>
+      </ul>
+    </div>
+
+    <section class="sec" id="features">
+      <div class="wrap">
+        <p class="label">Recursos</p>
+        <h2 class="sec-title">Registre. Depois decida quem vê.</h2>
+        <p class="lead">A maioria dos apps é privada ou pública. O Ova não é nem um nem outro &mdash; você decide, pessoa por pessoa e categoria por categoria, e pode mudar de ideia com um toque.</p>
+        <div class="cards reveal">
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#dial"/></svg></span><h3>O mostrador</h3><p>Em que ponto do ciclo você está, com a menstruação, a janela fértil e a ovulação desenhadas como formas, e não só como cores.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#calendar"/></svg></span><h3>Calendário e visão anual</h3><p>Cada dia que você registrou, e uma grade de doze meses em que um padrão irregular fica evidente de um jeito que um mês sozinho nunca mostra.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#chart"/></svg></span><h3>Análises que respondem alguma coisa</h3><p>A duração do ciclo comparada à faixa típica de 21 a 35 dias, quais sintomas aparecem mais e um resumo em linguagem simples.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#layers"/></svg></span><h3>Quatro modos</h3><p>Tentando engravidar, percepção do ciclo, gravidez, ou pós-parto e bebê. Trocar de modo muda o que o app mostra primeiro, nunca o que você registrou.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#thermo"/></svg></span><h3>Temperatura basal</h3><p>Lida do Health Connect se algum aparelho a registrar, com a elevação sustentada que confirma a ovulação marcada na curva.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#file-down"/></svg></span><h3>Exporte para uma consulta</h3><p>Um resumo em PDF de uma página para levar ao médico, ou o mesmo conteúdo em texto simples. Os dois pedem confirmação antes de qualquer coisa sair do app.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec tight" id="screens">
+      <div class="wrap">
+        <p class="label">Capturas de tela</p>
+        <h2 class="sec-title">Como ele é</h2>
+        <div class="shots reveal">
+          <figure><div class="device" style="--fd:-0s"><div class="screen"><img class="on" src="/assets/img/screens/ova-home.webp" alt="Tela inicial do Ova: o mostrador do ciclo mostrando o dia 6 do ciclo" width="600" height="1334" loading="lazy"/></div></div><figcaption class="cap">Em que ponto do ciclo você está</figcaption></figure>
+          <figure><div class="device" style="--fd:-1.5s"><div class="screen"><img class="on" src="/assets/img/screens/ova-invite-who.webp" alt="Convite do Ova, etapa um: escolha para quem é o compartilhamento" width="600" height="1334" loading="lazy"/></div></div><figcaption class="cap">Escolha com quem compartilhar</figcaption></figure>
+          <figure><div class="device" style="--fd:-3s"><div class="screen"><img class="on" src="/assets/img/screens/ova-invite-what.webp" alt="Convite do Ova, etapa dois: chaves separadas para datas do ciclo, sintomas, intimidade e humor" width="600" height="1334" loading="lazy"/></div></div><figcaption class="cap">Escolha o que cada pessoa vê</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec tight" id="sharing">
+      <div class="wrap">
+        <p class="label">Compartilhamento</p>
+        <h2 class="sec-title">Tudo para quem divide a vida com você. Para sua mãe, só as datas.</h2>
+        <ol class="steps" style="--n:3">
+          <li><h3>Crie um convite</h3><p>Escolha para quem é &mdash; parceiro ou parceira, família, amizade &mdash; e o Ova sugere padrões sensatos que você pode mudar.</p></li>
+          <li><h3>Escolha o que o convite libera</h3><p>Datas do ciclo, sintomas, intimidade e humor são quatro chaves separadas. Cada linha diz, em linguagem simples, o que ela realmente revela.</p></li>
+          <li><h3>Envie para uma pessoa</h3><p>Ela vê só o que você liberou. Mude, pause ou encerre quando quiser &mdash; a remoção vale na hora.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec tight">
+      <div class="wrap">
+        <p class="label">O que não vamos fazer</p>
+        <h2 class="sec-title">O que a maioria dos apps deixa vago</h2>
+        <div class="cards two reveal">
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#eye-off"/></svg></span><h3>As previsões nunca são compartilhadas</h3><p>Quem recebe seu compartilhamento vê os dias que você registrou, nunca a estimativa do Ova para sua janela fértil. Isso é garantido no servidor, não apenas escondido no app.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#eye"/></svg></span><h3>Olhar fica visível nos dois sentidos</h3><p>Você vê quando cada pessoa abriu seus dados pela última vez, e ela vê quando você abriu os dela.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#ban"/></svg></span><h3>Sem anúncios, sem ferramentas de análise</h3><p>O app não tem SDK de publicidade, nem ferramentas de análise, nem relatórios de falhas. Nada sobre como você usa o app é enviado a lugar nenhum.</p></div>
+          <div class="card"><span class="card-ic"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#alert"/></svg></span><h3>Não é um método contraceptivo</h3><p>O Ova não é um dispositivo médico. As previsões são só aritmética sobre as datas que você registrou, e erram mais vezes quanto menos você registra.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec tight">
+      <div class="wrap">
+        <div class="cta-card reveal">
+          <h2 class="sec-title">Dúvidas antes de instalar?</h2>
+          <p>A política de privacidade foi escrita para ser lida, não para ser enfrentada.</p>
+          <div class="cta-row">
+            <a href="https://play.google.com/store/apps/details?id=com.technook.ova" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#play"/></svg>Disponível no Google Play</a>
+            <a href="/ova/privacy/" class="btn btn-ghost">Ler a política de privacidade</a>
+          </div>
+          <p><a href="/pt/guides/period-tracker-apps-with-partner-sharing/"">Como o Ova se compara ao Flo, ao Clue e ao Stardust &rarr;</a></p>
+          <div class="legal">
+            <a href="/ova/support/">Suporte</a>
+            <a href="/ova/delete-account/">Excluir conta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <a href="/pt/"" class="brand">
+          <svg viewBox="0 0 512 512" fill="none" aria-hidden="true"><rect width="512" height="512" rx="112.6" fill="url(#tg)"/><g transform="translate(66.9 62.6) scale(0.24)"><path d="M1140 452 H436 V700 H680 V1160 H900 V452" fill="none" stroke="#fff" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+          Technook
+        </a>
+        <p>Ova: acompanhe seu ciclo e decida quem mais pode ver.<br/>Feito pela Technook em Delhi, Índia.</p>
+        <a class="foot-mail" href="mailto:devtools@theforgelabs.io">devtools@theforgelabs.io</a>
+      </div>
+      <div class="foot-cols">
+        <div><h2 class="foot-h">Ova</h2><a href="/ova/privacy/">Política de Privacidade</a><a href="/ova/support/">Suporte</a><a href="/ova/delete-account/">Excluir conta</a></div>
+        <div><h2 class="foot-h">Technook</h2><a href="/pt/"">technook.in</a><a href="/pt/onelist/"">OneList</a><a href="/pt/dawnpath/"">Dawnpath</a></div>
+      </div>
+    </div>
+    <div class="wrap foot-bottom"><span>&copy; 2026 Technook &middot; Ova</span><span>Sem anúncios · Sem ferramentas de análise</span></div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

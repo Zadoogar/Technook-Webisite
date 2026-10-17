@@ -98,12 +98,12 @@
 .more .ic { width: 16px; height: 16px; transition: transform .25s var(--ease-out); }
 .panel:hover .more .ic { transform: translateX(4px); }
 
-.panel-art { position: relative; display: grid; place-items: center; padding: 40px 24px 28px; border-left: 1px solid var(--line); }
+.panel-art { position: relative; display: grid; place-items: center; padding: 40px 24px 28px; border-inline-start: 1px solid var(--line); }
 .panel-art figure { width: clamp(200px, 22vw, 260px); display: flex; flex-direction: column; align-items: center; gap: 18px; }
 .panel-art .device { width: 100%; }
 @media (max-width: 860px) {
   .panel { grid-template-columns: minmax(0, 1fr); }
-  .panel-art { border-left: 0; border-top: 1px solid var(--line); }
+  .panel-art { border-inline-start: 0; border-top: 1px solid var(--line); }
 }
 
 /* ── FOOTER WORDMARK ──────────────────────────────────────────────────────── */
@@ -118,3 +118,7 @@
 /* Live pills double as Play Store links. */
 a.pill { transition: color .2s; }
 a.pill:hover { color: var(--tx); }
+
+/* The tilted side phones poke past the screen edge on phones. Clip at the hero so that overflow
+   can't shift the page: RTL starts scrolled by it otherwise. Same look, the edge is the viewport. */
+.hero { overflow-x: clip; }
